@@ -30,6 +30,10 @@ Create or update `.md` files that:
 5. Add short summaries, source metadata, links, and block IDs.
 6. Keep file names short, predictable, and lowercase.
 
+## Explicit Invocation
+
+The user may explicitly invoke this skill by starting the message with `$obsidian-book-notes` before the source text. Treat that as a strong signal to use this skill immediately.
+
 ## Note Rules
 
 - Keep the skill instructions and metadata in English.
@@ -49,8 +53,8 @@ Open the matching template before writing:
 - [_templates/code-note.md](/Users/bohdanne/Desktop/bohdan/BooksObsidian/_templates/code-note.md)
 - [_templates/summary-note.md](/Users/bohdanne/Desktop/bohdan/BooksObsidian/_templates/summary-note.md)
 
-## Session Prompt
+## Optional Session Prompt
 
-For reusable instructions, see:
+For reusable instructions that can help set the tone of a session, see this optional reference:
 
 - [_prompts/obsidian-session-prompt.md](/Users/bohdanne/Desktop/bohdan/BooksObsidian/_prompts/obsidian-session-prompt.md)

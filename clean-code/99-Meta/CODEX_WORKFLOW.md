@@ -12,6 +12,17 @@ Text:
 ...
 ```
 
+Або явно вкажіть skill на початку повідомлення:
+
+```text
+$obsidian-book-notes
+Book: Clean Code
+Chapter: 3
+Source type: quote
+Text:
+...
+```
+
 ```text
 Book: Clean Code
 Chapter: 5

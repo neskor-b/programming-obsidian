@@ -20,6 +20,10 @@ bash .agents/skills/book-vault-scaffold/scripts/create-book-vault.sh "Book Title
 4. Verify the created files.
 5. Briefly tell the user which folder was created.
 
+## Explicit Invocation
+
+The user may explicitly invoke this skill by starting the message with `$book-vault-scaffold` before the request text. Treat that as a strong signal to use this skill immediately.
+
 ## Created Structure
 
 - book folder
