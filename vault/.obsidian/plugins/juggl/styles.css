@@ -225,3 +225,204 @@ button.juggl-icon-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
+/* BooksObsidian project skin: Obsidian-like graphite/slate surfaces */
+.theme-light {
+    --juggl-books-panel: #edf1f7;
+    --juggl-books-panel-strong: #dde4ef;
+    --juggl-books-surface: #f8fafc;
+    --juggl-books-border: #b5c0d3;
+    --juggl-books-border-strong: #7d8fb0;
+    --juggl-books-accent: #596a8f;
+    --juggl-books-accent-soft: #7c92ba;
+    --juggl-books-text: #253044;
+    --juggl-books-muted: #62708a;
+    --juggl-books-shadow: rgba(28, 36, 52, 0.12);
+}
+
+.theme-dark {
+    --juggl-books-panel: #1f2430;
+    --juggl-books-panel-strong: #272e3b;
+    --juggl-books-surface: #202734;
+    --juggl-books-border: #465165;
+    --juggl-books-border-strong: #7083a6;
+    --juggl-books-accent: #93a7cf;
+    --juggl-books-accent-soft: #b0c0e0;
+    --juggl-books-text: #d8e0ef;
+    --juggl-books-muted: #97a3bb;
+    --juggl-books-shadow: rgba(0, 0, 0, 0.34);
+}
+
+div.cy-content {
+    background:
+        radial-gradient(circle at top right, rgba(124, 146, 186, 0.14), transparent 28%),
+        linear-gradient(180deg, rgba(89, 106, 143, 0.08), transparent 22%);
+}
+
+div.cy-navigator {
+    width: 168px;
+    height: 168px;
+    bottom: 14px;
+    right: 18px;
+    border: 1px solid var(--juggl-books-border);
+    border-radius: 16px;
+    background: linear-gradient(180deg, var(--juggl-books-panel), var(--juggl-books-surface));
+    box-shadow: 0 14px 30px var(--juggl-books-shadow);
+    backdrop-filter: blur(10px);
+}
+
+.cytoscape-navigatorView {
+    border: 1px solid var(--juggl-books-border-strong);
+    border-radius: 10px;
+    background: var(--juggl-books-accent);
+    opacity: 0.24;
+}
+
+.cy-toolbar {
+    left: 14px;
+    top: 14px;
+}
+
+.cy-toolbar-section {
+    background: linear-gradient(180deg, var(--juggl-books-panel), var(--juggl-books-surface));
+    border-color: var(--juggl-books-border);
+    border-radius: 14px;
+    padding: 4px;
+    box-shadow: 0 10px 24px var(--juggl-books-shadow);
+    backdrop-filter: blur(8px);
+}
+
+.cy-toolbar > input[type='text'] {
+    min-width: 18rem;
+    color: var(--juggl-books-text);
+    background: var(--juggl-books-surface);
+    border: 1px solid var(--juggl-books-border);
+    border-radius: 11px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.cy-toolbar > input[type='text']::placeholder {
+    color: var(--juggl-books-muted);
+}
+
+button.juggl-button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background: var(--juggl-books-surface);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    transition: transform 120ms ease, border-color 120ms ease, background-color 120ms ease, box-shadow 120ms ease;
+}
+
+button.juggl-button > svg > path {
+    fill: var(--juggl-books-accent);
+    opacity: 0.82;
+}
+
+button.juggl-button:hover:not(:disabled) {
+    transform: translateY(-1px);
+    border-color: var(--juggl-books-border);
+    background: var(--juggl-books-panel-strong);
+    box-shadow: 0 6px 16px var(--juggl-books-shadow);
+}
+
+button.juggl-button:hover:not(:disabled) > svg > path {
+    opacity: 1;
+}
+
+button.juggl-button:focus-visible,
+button.juggl-button-pane:focus-visible,
+.cy-toolbar > input[type='text']:focus-visible {
+    outline: 2px solid var(--juggl-books-accent-soft);
+    outline-offset: 2px;
+}
+
+.cy-toolbar-section > button:disabled {
+    background: transparent;
+    border-color: transparent;
+}
+
+button.juggl-button:disabled > svg > path {
+    fill: var(--juggl-books-muted);
+    opacity: 0.35;
+}
+
+button.juggl-button-pane {
+    width: 18px;
+    height: 18px;
+    border-radius: 6px;
+}
+
+.juggl-hover.is-loaded.hover-popover.popover {
+    opacity: 0.98;
+    border: 1px solid var(--juggl-books-border);
+    border-radius: 16px;
+    box-shadow: 0 18px 32px var(--juggl-books-shadow);
+    overflow: hidden;
+}
+
+.juggl-preview-edge {
+    height: 160px !important;
+}
+
+div.juggl-nodes-pane,
+div.juggl-style-pane {
+    padding: 12px 14px 22px;
+    color: var(--juggl-books-text);
+    background:
+        linear-gradient(180deg, rgba(196, 142, 87, 0.08), transparent 11%),
+        var(--background-primary);
+}
+
+div.juggl-style-group {
+    gap: 6px 8px;
+    margin: 12px 0;
+    padding: 12px 12px 10px;
+    border: 1px solid var(--juggl-books-border);
+    border-radius: 14px;
+    background: linear-gradient(180deg, var(--juggl-books-panel), var(--juggl-books-surface));
+    box-shadow: 0 8px 22px var(--juggl-books-shadow);
+}
+
+div.juggl-style-group-hidden {
+    opacity: 0.68;
+    filter: saturate(0.8);
+}
+
+div.juggl-list-text {
+    font-size: 13px;
+    line-height: 1.45;
+    color: var(--juggl-books-text);
+}
+
+.juggl-style-pane-left {
+    width: 58px;
+}
+
+.juggl-inline-group {
+    max-width: 11rem;
+    gap: 6px;
+}
+
+.juggl-inline-group .form-control,
+button.juggl-icon-button,
+.juggl-icon-picker > .suggestion-item {
+    border-radius: 10px;
+}
+
+.juggl-inline-group .form-control,
+button.juggl-icon-button {
+    color: var(--juggl-books-text);
+    background: var(--juggl-books-surface);
+    border: 1px solid var(--juggl-books-border);
+}
+
+.juggl-icon-picker > .suggestion-item.is-selected {
+    background: var(--juggl-books-panel-strong);
+    color: var(--juggl-books-text);
+}
+
+.react-icon {
+    color: var(--juggl-books-accent);
+}
