@@ -64,52 +64,52 @@ edge {
 
 /* Book hub: keep visible but not dominant */
 node[type = "index"][path ^= "01-Books/"] {
-    background-color: #4a303d;
-    border-color: #d7a8bf;
+    background-color: #583347;
+    border-color: #f0a9c8;
     border-width: 1.8px;
     color: #fff3f8;
     font-size: 12.2px;
-    underlay-color: #9f627e;
+    underlay-color: #c46b94;
     underlay-opacity: 0.12;
     underlay-padding: 6px;
     z-index: 14;
 }
 
-/* Chapter notes: medium emphasis, slightly cooler */
+/* Chapter notes: teal reading flow */
 node[type = "chapter"] {
-    background-color: #23333a;
-    border-color: #73a9b5;
+    background-color: #1f4b52;
+    border-color: #77d2d9;
     border-width: 1.2px;
-    color: #edf8fa;
+    color: #eefcfd;
     font-size: 10.8px;
 }
 
 /* Local concepts are the primary knowledge atoms inside a book */
 node[type = "concept"][scope = "book-local"] {
-    background-color: #272a3f;
-    border-color: #98a2e6;
+    background-color: #40305f;
+    border-color: #c29aff;
     border-width: 1.25px;
-    color: #f1f3ff;
+    color: #f7f2ff;
     font-size: 10.9px;
 }
 
 /* Shared evergreen concepts deserve the strongest emphasis */
 node[type = "concept"][scope = "shared-evergreen"] {
-    background-color: #2a3046;
-    border-color: #c1cbff;
+    background-color: #224868;
+    border-color: #7fd1ff;
     border-width: 1.45px;
-    color: #f8faff;
+    color: #f3fbff;
     font-size: 11.1px;
 }
 
 /* Topic maps are navigation layers, not the core knowledge atoms */
 node[path ^= "03-Maps/"],
 node[scope = "topic-maps"] {
-    background-color: #2f2838;
-    border-color: #a596bc;
+    background-color: #594224;
+    border-color: #e4b46d;
     border-style: dashed;
     border-width: 1.15px;
-    color: #efe9f8;
+    color: #fff3df;
     font-size: 10.7px;
 }
 

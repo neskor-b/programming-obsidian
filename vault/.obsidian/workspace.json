@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2dc00d2acc09a1a8",
+        "id": "c6d1660958b0cc8d",
         "type": "tabs",
         "children": [
           {
-            "id": "f76b5b58d60ef978",
+            "id": "7bd4f3a8612276de",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -199,20 +199,20 @@
       "juggl:Juggl global graph": false
     }
   },
-  "active": "f76b5b58d60ef978",
+  "active": "7bd4f3a8612276de",
   "lastOpenFiles": [
+    "01-Books/clean-architecture/03-Concepts/architecture-is-important-not-urgent.md",
+    "01-Books/clean-architecture/02-Chapters/ch-03-paradigm-overview.md",
     "01-Books/clean-architecture/Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin).md",
+    "02-Concepts/architecture-governs-cost-of-change.md",
     "01-Books/clean-architecture/03-Concepts/two-values-of-software.md",
     "01-Books/clean-architecture/03-Concepts/paradigms-impose-discipline.md",
     "01-Books/clean-architecture/03-Concepts/design-architecture-continuum.md",
     "01-Books/clean-architecture/03-Concepts/cleanliness-preserves-productivity.md",
-    "01-Books/clean-architecture/03-Concepts/architecture-is-important-not-urgent.md",
-    "01-Books/clean-architecture/02-Chapters/ch-03-paradigm-overview.md",
     "01-Books/clean-architecture/02-Chapters/ch-02-a-tale-of-two-values.md",
     "01-Books/clean-architecture/02-Chapters/ch-01-design-and-architecture.md",
     "00-Home.md",
     "02-Concepts/00-Concepts.md",
-    "02-Concepts/architecture-governs-cost-of-change.md",
     "01-Books/00-Books.md",
     "01-Books/clean-architecture/03-Concepts/Парадигми вводять дисципліну через обмеження.md",
     "2026-03-24.md",
