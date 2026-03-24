@@ -4,17 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "f44b7b6b20b3aeb6",
+        "id": "9c9244d632585e3e",
         "type": "tabs",
         "children": [
           {
-            "id": "492cab84f7e153b2",
+            "id": "4db18fb14bdc534f",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "graph",
+              "type": "juggl_view",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Juggl"
             }
           }
         ]
@@ -178,8 +180,7 @@
               "title": "Juggl style"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -198,13 +199,14 @@
       "juggl:Juggl global graph": false
     }
   },
-  "active": "492cab84f7e153b2",
+  "active": "4db18fb14bdc534f",
   "lastOpenFiles": [
-    "01-Books/clean-architecture/03-Concepts/design-architecture-continuum.md",
-    "02-Concepts/00-Concepts.md",
     "00-Home.md",
-    "02-Concepts/architecture-governs-cost-of-change.md",
+    "02-Concepts/00-Concepts.md",
     "01-Books/clean-architecture/Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin).md",
+    "01-Books/clean-architecture/03-Concepts/architecture-is-important-not-urgent.md",
+    "01-Books/clean-architecture/03-Concepts/design-architecture-continuum.md",
+    "02-Concepts/architecture-governs-cost-of-change.md",
     "01-Books/clean-architecture/02-Chapters/ch-03-paradigm-overview.md",
     "01-Books/clean-architecture/03-Concepts/paradigms-impose-discipline.md",
     "01-Books/clean-architecture/02-Chapters/ch-02-a-tale-of-two-values.md",
@@ -213,7 +215,6 @@
     "01-Books/clean-architecture/03-Concepts/cleanliness-preserves-productivity.md",
     "01-Books/00-Books.md",
     "01-Books/clean-architecture/03-Concepts/Парадигми вводять дисципліну через обмеження.md",
-    "01-Books/clean-architecture/03-Concepts/architecture-is-important-not-urgent.md",
     "2026-03-24.md",
     "01-Books/clean-architecture/00-Index.md"
   ]
