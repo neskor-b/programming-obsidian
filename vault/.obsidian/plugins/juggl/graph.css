@@ -40,7 +40,10 @@ edge {
     curve-style: straight;
     line-color: #73819a;
     line-opacity: 0.52;
+    source-arrow-shape: none;
     target-arrow-shape: none;
+    target-arrow-color: #73819a;
+    arrow-scale: 1.7;
 }
 
 node[type = "index"][path ^= "01-Books/"] {
@@ -144,6 +147,8 @@ edge.unhover {
 edge.connected-hover {
     line-color: #b491ff;
     line-opacity: 0.92;
+    target-arrow-shape: vee;
+    target-arrow-color: #b491ff;
 }
 
 node.hover {
