@@ -1,1 +1,6 @@
-{}
+{
+  "userIgnoreFilters": [
+    "/vault/00-Home.md",
+    "/vault/01-Books/00-Books.md"
+  ]
+}
