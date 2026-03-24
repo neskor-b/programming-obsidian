@@ -46,6 +46,7 @@ source: "chapter-3-excerpt"
 ## Пов'язані концепти
 
 - [[01-Books/clean-architecture/03-Concepts/design-architecture-continuum|Єдність дизайну й архітектури]]
+- [[01-Books/clean-architecture/03-Concepts/functional-decomposition-needs-structured-programming|Функціональна декомпозиція потребує структурного програмування]]
 
 ## Пов'язаний код
 

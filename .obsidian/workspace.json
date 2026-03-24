@@ -177,5 +177,9 @@
     }
   },
   "active": "a3b2aeb1d8a1e67a",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "vault/02-Concepts/tests-falsify-not-prove-correctness.md",
+    "vault/01-Books/clean-architecture/03-Concepts/functional-decomposition-needs-structured-programming.md",
+    "vault/01-Books/clean-architecture/02-Chapters/ch-04-structured-programming.md"
+  ]
 }

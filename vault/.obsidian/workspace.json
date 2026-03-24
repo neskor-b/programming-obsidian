@@ -4,23 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c37f1305519c6224",
+        "id": "e3195fbbd6571201",
         "type": "tabs",
         "children": [
           {
-            "id": "dd6afff3ebc24dd1",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "juggl_view",
-              "state": {},
-              "pinned": true,
-              "icon": "lucide-ghost",
-              "title": "juggl_view"
-            }
-          },
-          {
-            "id": "0494024ac9f0db55",
+            "id": "e4f5b30bd4f5d993",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -31,8 +19,7 @@
               "title": "Juggl"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -89,7 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 319.5
+    "width": 321.5
   },
   "right": {
     "id": "33796d9fddc83d1e",
@@ -212,22 +199,26 @@
       "juggl:Juggl global graph": false
     }
   },
-  "active": "0494024ac9f0db55",
+  "active": "e4f5b30bd4f5d993",
   "lastOpenFiles": [
+    "01-Books/clean-architecture/02-Chapters/ch-02-a-tale-of-two-values.md",
+    "01-Books/clean-architecture/03-Concepts/paradigms-impose-discipline.md",
+    "02-Concepts/tests-falsify-not-prove-correctness.md",
+    "01-Books/clean-architecture/03-Concepts/functional-decomposition-needs-structured-programming.md",
+    "01-Books/clean-architecture/02-Chapters/ch-04-structured-programming.md",
+    "03-Maps/00-Maps.md",
+    "02-Concepts/00-Concepts.md",
+    "00-Home.md",
+    "01-Books/clean-architecture/03-Concepts/cleanliness-preserves-productivity.md",
+    "01-Books/clean-architecture/03-Concepts/architecture-is-important-not-urgent.md",
     "01-Books/clean-architecture/03-Concepts/design-architecture-continuum.md",
     "01-Books/clean-architecture/02-Chapters/ch-03-paradigm-overview.md",
     "01-Books/clean-architecture/Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin).md",
     "01-Books/clean-architecture/02-Chapters/ch-01-design-and-architecture.md",
     "01-Books/00-Books.md",
-    "00-Home.md",
     "Untitled.canvas",
-    "01-Books/clean-architecture/03-Concepts/architecture-is-important-not-urgent.md",
     "02-Concepts/architecture-governs-cost-of-change.md",
     "01-Books/clean-architecture/03-Concepts/two-values-of-software.md",
-    "01-Books/clean-architecture/03-Concepts/paradigms-impose-discipline.md",
-    "01-Books/clean-architecture/03-Concepts/cleanliness-preserves-productivity.md",
-    "01-Books/clean-architecture/02-Chapters/ch-02-a-tale-of-two-values.md",
-    "02-Concepts/00-Concepts.md",
     "01-Books/clean-architecture/03-Concepts/Парадигми вводять дисципліну через обмеження.md",
     "2026-03-24.md",
     "01-Books/clean-architecture/00-Index.md"

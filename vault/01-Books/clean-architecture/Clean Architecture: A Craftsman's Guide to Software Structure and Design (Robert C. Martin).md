@@ -27,6 +27,7 @@ updated: 2026-03-24
 - [[01-Books/clean-architecture/02-Chapters/ch-01-design-and-architecture|Розділ 1. Що таке дизайн і архітектура]]
 - [[01-Books/clean-architecture/02-Chapters/ch-02-a-tale-of-two-values|Розділ 2. Історія про дві цінності]]
 - [[01-Books/clean-architecture/02-Chapters/ch-03-paradigm-overview|Розділ 3. Огляд парадигм]]
+- [[01-Books/clean-architecture/02-Chapters/ch-04-structured-programming|Розділ 4. Структурне програмування]]
 
 ## Локальні концепти
 
@@ -35,10 +36,12 @@ updated: 2026-03-24
 - [[01-Books/clean-architecture/03-Concepts/two-values-of-software|Дві цінності програмного забезпечення]]
 - [[01-Books/clean-architecture/03-Concepts/architecture-is-important-not-urgent|Архітектура важлива, але не термінова]]
 - [[01-Books/clean-architecture/03-Concepts/paradigms-impose-discipline|Парадигми вводять дисципліну через обмеження]]
+- [[01-Books/clean-architecture/03-Concepts/functional-decomposition-needs-structured-programming|Функціональна декомпозиція потребує структурного програмування]]
 
 ## Міжкнижкові концепти з цієї книги
 
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
+- [[02-Concepts/tests-falsify-not-prove-correctness|Тести спростовують помилки, а не доводять коректність]]
 
 ## Робочі папки
 
