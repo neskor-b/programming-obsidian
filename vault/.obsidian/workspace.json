@@ -4,20 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "46085810b10f9cf9",
+        "id": "c37f1305519c6224",
         "type": "tabs",
         "children": [
           {
-            "id": "34052efe96891ab5",
+            "id": "dd6afff3ebc24dd1",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "empty",
+              "type": "juggl_view",
               "state": {},
+              "pinned": true,
+              "icon": "lucide-ghost",
+              "title": "juggl_view"
+            }
+          },
+          {
+            "id": "0494024ac9f0db55",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "juggl_view",
+              "state": {},
+              "pinned": true,
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Juggl"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -197,16 +212,16 @@
       "juggl:Juggl global graph": false
     }
   },
-  "active": "34052efe96891ab5",
+  "active": "0494024ac9f0db55",
   "lastOpenFiles": [
+    "01-Books/clean-architecture/03-Concepts/design-architecture-continuum.md",
+    "01-Books/clean-architecture/02-Chapters/ch-03-paradigm-overview.md",
     "01-Books/clean-architecture/Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin).md",
     "01-Books/clean-architecture/02-Chapters/ch-01-design-and-architecture.md",
-    "01-Books/clean-architecture/03-Concepts/design-architecture-continuum.md",
     "01-Books/00-Books.md",
     "00-Home.md",
     "Untitled.canvas",
     "01-Books/clean-architecture/03-Concepts/architecture-is-important-not-urgent.md",
-    "01-Books/clean-architecture/02-Chapters/ch-03-paradigm-overview.md",
     "02-Concepts/architecture-governs-cost-of-change.md",
     "01-Books/clean-architecture/03-Concepts/two-values-of-software.md",
     "01-Books/clean-architecture/03-Concepts/paradigms-impose-discipline.md",
