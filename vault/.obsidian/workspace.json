@@ -157,6 +157,26 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "492e70a162afd112",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {},
+              "icon": "ag-node-list",
+              "title": "Juggl nodes"
+            }
+          },
+          {
+            "id": "e5fb926676674cfc",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {},
+              "icon": "ag-style",
+              "title": "Juggl style"
+            }
           }
         ]
       }
