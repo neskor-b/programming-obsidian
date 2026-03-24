@@ -24,7 +24,8 @@ updated: 2026-03-24
 
 ## Розділи
 
-- Додавайте сюди посилання на нотатки розділів у міру читання.
+- [[01-Books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity|Розділ 1. Вступ: усе зводиться до складності]]
+- [[01-Books/a-philosophy-of-software-design/05-Summaries/ch-01-introduction-summary|Підсумок розділу 1]]
 
 ## Робочі папки
 
@@ -38,3 +39,4 @@ updated: 2026-03-24
 
 - Повторювані концепти виносьте в [[02-Concepts/00-Concepts]]
 - Якщо тема вже охоплює кілька книг, використовуйте [[03-Maps/00-Maps]]
+- Для цієї книги першим shared concept став [[02-Concepts/complexity-is-the-central-design-problem|Складність є центральною проблемою дизайну ПЗ]]
