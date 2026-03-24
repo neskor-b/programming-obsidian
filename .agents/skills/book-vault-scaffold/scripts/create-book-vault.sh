@@ -148,7 +148,7 @@ updated: $today
 EOF
 
 book_link="- [[01-Books/$book_slug/$book_note_name|$book_title]]"
-if ! grep -Fqx "$book_link" "$books_index"; then
+if ! grep -Fqx -- "$book_link" "$books_index"; then
   printf '%s\n' "$book_link" >> "$books_index"
 fi
 
