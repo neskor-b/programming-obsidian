@@ -8,11 +8,89 @@ fi
 
 book_title="$1"
 book_slug="$2"
-book_dir="$book_slug"
+vault_dir="vault"
+books_dir="$vault_dir/01-Books"
+concepts_dir="$vault_dir/02-Concepts"
+maps_dir="$vault_dir/03-Maps"
+book_dir="$books_dir/$book_slug"
+today="$(date +%F)"
+books_index="$books_dir/00-Books.md"
 
 if [ -e "$book_dir" ]; then
   echo "Directory already exists: $book_dir" >&2
   exit 2
+fi
+
+mkdir -p "$books_dir" "$concepts_dir" "$maps_dir"
+
+if [ ! -f "$vault_dir/00-Home.md" ]; then
+  cat > "$vault_dir/00-Home.md" <<EOF
+---
+type: home
+created: $today
+updated: $today
+---
+
+# Книжковий vault
+
+## Навігація
+
+- [[01-Books/00-Books|Усі книги]]
+- [[02-Concepts/00-Concepts|Спільні концепти]]
+- [[03-Maps/00-Maps|Тематичні мапи]]
+
+## Принцип
+
+- Кожна книга живе в \`01-Books/<book-slug>/\`
+- Повторювані міжкнижкові ідеї живуть у \`02-Concepts/\`
+- Великі теми з багатьма зв'язками збираються в \`03-Maps/\`
+EOF
+fi
+
+if [ ! -f "$books_index" ]; then
+  cat > "$books_index" <<EOF
+---
+type: index
+scope: books
+created: $today
+updated: $today
+---
+
+# Усі книги
+
+## Індекси книг
+
+EOF
+fi
+
+if [ ! -f "$concepts_dir/00-Concepts.md" ]; then
+  cat > "$concepts_dir/00-Concepts.md" <<EOF
+---
+type: index
+scope: shared-concepts
+created: $today
+updated: $today
+---
+
+# Спільні концепти
+
+Тут живуть evergreen-нотатки, які збирають ідеї з кількох книг і посилаються на конкретні книжкові джерела через block references.
+EOF
+fi
+
+if [ ! -f "$maps_dir/00-Maps.md" ]; then
+  cat > "$maps_dir/00-Maps.md" <<EOF
+---
+type: index
+scope: topic-maps
+created: $today
+updated: $today
+---
+
+# Тематичні мапи
+
+Тут зберігаються MOC-нотатки для великих тем, які вже перетнули кілька книг і багато концептів.
+EOF
 fi
 
 mkdir -p \
@@ -32,8 +110,8 @@ aliases:
 tags:
   - book-note
   - index
-created: $(date +%F)
-updated: $(date +%F)
+created: $today
+updated: $today
 ---
 
 # $book_title
@@ -42,18 +120,29 @@ updated: $(date +%F)
 
 Центральна карта нотаток, побудованих на основі цієї книги.
 
+## Навігація
+
+- [[00-Home|Головна]]
+- [[01-Books/00-Books|Усі книги]]
+- [[02-Concepts/00-Concepts|Спільні концепти]]
+- [[01-Books/${book_slug}/99-Meta/CODEX_WORKFLOW|Правила роботи для цієї книги]]
+
 ## Розділи
 
 - Додавайте сюди посилання на нотатки розділів у міру читання.
 
-## Процес
+## Робочі папки
 
-- Сирі уривки можна тимчасово складати в [[${book_slug}/01-Inbox]]
-- Нотатки розділів живуть у [[${book_slug}/02-Chapters]]
-- Концепти живуть у [[${book_slug}/03-Concepts]]
-- Приклади коду живуть у [[${book_slug}/04-Code]]
-- Підсумки живуть у [[${book_slug}/05-Summaries]]
-- Правила роботи описані в [[${book_slug}/99-Meta/CODEX_WORKFLOW]]
+- \`01-Inbox/\` для сирих уривків
+- \`02-Chapters/\` для нотаток розділів
+- \`03-Concepts/\` для локальних концептів книги
+- \`04-Code/\` для прикладів коду
+- \`05-Summaries/\` для підсумків
+
+## Міжкнижкові зв'язки
+
+- Повторювані концепти виносьте в [[02-Concepts/00-Concepts]]
+- Якщо тема вже охоплює кілька книг, використовуйте [[03-Maps/00-Maps]]
 EOF
 
 cat > "$book_dir/99-Meta/CODEX_WORKFLOW.md" <<EOF
@@ -74,10 +163,11 @@ Text:
 ## Що має робити Codex
 
 1. Перевірити наявні нотатки в папці цієї книги.
-2. Вирішити, чи належить ідея до нотатки розділу, концепту, коду чи підсумку.
-3. Оновити існуючі нотатки, якщо це можливо.
-4. Створити block references для важливих уривків і коду.
-5. Додати \`[[wikilinks]]\` до пов'язаних нотаток.
+2. Перевірити shared notes у \`vault/02-Concepts/\` і релевантні MOC у \`vault/03-Maps/\`.
+3. Вирішити, чи належить ідея до локальної книжкової нотатки, shared concept note або topic map.
+4. Оновити існуючі нотатки, якщо це можливо.
+5. Створити block references для важливих уривків і коду.
+6. Додати \`[[wikilinks]]\` між книжковими та shared нотатками.
 
 ## Шаблон block id
 
@@ -89,11 +179,18 @@ Text:
 
 ## Карта папок
 
-- \`01-Inbox/\`
-- \`02-Chapters/\`
-- \`03-Concepts/\`
-- \`04-Code/\`
-- \`05-Summaries/\`
+- \`vault/01-Books/${book_slug}/01-Inbox/\`
+- \`vault/01-Books/${book_slug}/02-Chapters/\`
+- \`vault/01-Books/${book_slug}/03-Concepts/\`
+- \`vault/01-Books/${book_slug}/04-Code/\`
+- \`vault/01-Books/${book_slug}/05-Summaries/\`
+- \`vault/02-Concepts/\`
+- \`vault/03-Maps/\`
 EOF
+
+book_link="- [[01-Books/$book_slug/00-Index|$book_title]]"
+if ! grep -Fqx "$book_link" "$books_index"; then
+  printf '%s\n' "$book_link" >> "$books_index"
+fi
 
 printf 'Created book vault: %s\n' "$book_dir"

@@ -1,6 +1,8 @@
 ---
 type: concept
 book: ""
+scope: ""
+books: []
 title: ""
 aliases: []
 tags:
@@ -28,14 +30,15 @@ source:
 - Ознака 1
 - Ознака 2
 
-## Приклади
+## Книжки-джерела
 
-- Див. [[ch-01-clean-code-basics]]
+- [[01-Books/book-slug/03-Concepts/concept-topic#^source-block]]
+- [[01-Books/another-book/02-Chapters/ch-02-topic#^source-block]]
 
 ## Пов'язані концепти
 
-- [[concept-pryklad]]
+- [[02-Concepts/another-concept]]
 
 ## Пов'язаний код
 
-- [[code-pryklad]]
+- [[01-Books/book-slug/04-Code/code-topic]]

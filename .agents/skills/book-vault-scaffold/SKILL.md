@@ -26,15 +26,16 @@ The user may explicitly invoke this skill by starting the message with `$book-va
 
 ## Created Structure
 
-- book folder
-- `01-Inbox/`
-- `02-Chapters/`
-- `03-Concepts/`
-- `04-Code/`
-- `05-Summaries/`
-- `99-Meta/`
-- `00-Index.md`
-- `99-Meta/CODEX_WORKFLOW.md`
+- `vault/01-Books/<slug>/`
+- `vault/01-Books/<slug>/01-Inbox/`
+- `vault/01-Books/<slug>/02-Chapters/`
+- `vault/01-Books/<slug>/03-Concepts/`
+- `vault/01-Books/<slug>/04-Code/`
+- `vault/01-Books/<slug>/05-Summaries/`
+- `vault/01-Books/<slug>/99-Meta/`
+- `vault/01-Books/<slug>/00-Index.md`
+- `vault/01-Books/<slug>/99-Meta/CODEX_WORKFLOW.md`
+- shared navigation files in `vault/` if they do not exist yet
 
 ## Rules
 

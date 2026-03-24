@@ -40,12 +40,16 @@ source:
 
 ## Пов'язані концепти
 
-- [[concept-example]]
+- [[02-Concepts/example-concept]]
 
 ## Пов'язані приклади коду
 
-- [[code-example]]
+- [[01-Books/book-slug/04-Code/code-example]]
+
+## Книжкові джерела або продовження
+
+- [[01-Books/book-slug/00-Index|Індекс книги]]
 
 ## Пов'язані нотатки
 
-- [[00-Index]]
+- [[03-Maps/example-topic-map]]

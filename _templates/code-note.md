@@ -32,8 +32,8 @@ source:
 
 ## Пов'язані концепти
 
-- [[concept-pryklad]]
+- [[02-Concepts/example-concept]]
 
 ## Пов'язані розділи
 
-- [[ch-01-clean-code-basics]]
+- [[01-Books/book-slug/02-Chapters/ch-01-topic]]

@@ -1,4 +1,4 @@
 interface:
   display_name: "Obsidian Book Notes"
-  short_description: "Turn programming book excerpts into linked Obsidian notes"
-  default_prompt: "Create or update linked Obsidian Markdown notes from programming book excerpts and keep the final note content in Ukrainian."
+  short_description: "Turn book excerpts into scalable, well-linked Obsidian notes"
+  default_prompt: "Create or update linked Obsidian Markdown notes from programming book excerpts, use retrieval-first linking across the vault, and keep the final note content in Ukrainian."

@@ -1,37 +1,40 @@
 # Codex + Obsidian Notes
 
-Цей workspace підготовлений для процесу, у якому Codex перетворює уривки з технічних книжок на пов'язані нотатки для Obsidian.
+Цей workspace розділяє технічну частину для Codex і чистий vault для Obsidian, щоб можна було відкривати в Obsidian одразу всі книги й не бачити службові файли.
 
-## Мета
+## Як тепер працює структура
 
-Перетворювати вставлені цитати, уривки та фрагменти розділів на пов'язані Obsidian Markdown-нотатки з:
+- `vault/` - єдина папка, яку варто відкривати в Obsidian
+- `vault/01-Books/<book-slug>/` - усі локальні нотатки конкретної книги
+- `vault/02-Concepts/` - спільні evergreen-нотатки, які можуть посилатися на кілька книг
+- `vault/03-Maps/` - тематичні мапи для великих тем і міжкнижкової навігації
+- `.agents/skills/` - локальні skills для Codex
+- `_templates/` - шаблони нотаток
+- `_prompts/` - опційні референсні промпти
+- `docs/` - технічні рішення і дослідження структури
 
-- нотатками розділів
-- нотатками концептів
-- нотатками з прикладами коду
-- підсумковими нотатками
-- `[[wikilinks]]` між файлами
-- block references на кшталт `[[note#^block-id]]`
+## Чому така модель
 
-## Структура
+- Obsidian бачить тільки нотатки, а не `_templates`, `_prompts` чи `.agents`
+- книжкові нотатки залишаються ізольованими, тому сотні файлів не змішуються в одному каталозі
+- спільні концепти не дублюються в кожній книзі, а збираються в `vault/02-Concepts/`
+- міжкнижкові зв'язки будуються через path-based `[[wikilinks]]` і block references
 
-- `.agents/skills/book-vault-scaffold/` - skill для створення каркаса нової книги
-- `_templates/` - шаблони нотаток для Codex
-- `_prompts/` - опційні референсні промпти, якщо хочете явно задати режим роботи сесії
-- `.agents/skills/obsidian-book-notes/` - repo-level skill для Codex у межах цього workspace
-- `clean-code/` - поточна папка книги
+Детальні правила описані в [docs/vault-architecture.md](/Users/bohdanne/Desktop/bohdan/BooksObsidian/docs/vault-architecture.md).
 
-## Швидкий старт для нотаток
+## Швидкий старт
 
-1. Відкрийте цю папку в Codex.
-2. Просто надішліть у чат цитату або фрагмент розділу і вкажіть, до якої книги та розділу він належить.
-3. Codex має сам використати локальний skill і оновити або створити потрібні нотатки.
-4. Якщо хочете окремо зафіксувати стиль сесії, можете додатково подивитися [_prompts/obsidian-session-prompt.md](/Users/bohdanne/Desktop/bohdan/BooksObsidian/_prompts/obsidian-session-prompt.md), але копіювати його в кожен чат не потрібно.
+1. Відкрийте `/Users/bohdanne/Desktop/bohdan/BooksObsidian` у Codex.
+2. Відкрийте `/Users/bohdanne/Desktop/bohdan/BooksObsidian/vault` в Obsidian.
+3. Надішліть у чат цитату або фрагмент розділу і вкажіть книгу та розділ.
+4. Codex має сам перевірити локальні нотатки книги, спільні концепти та за потреби створити міжкнижкові лінки.
+
+За потреби можна додатково подивитися [_prompts/obsidian-session-prompt.md](/Users/bohdanne/Desktop/bohdan/BooksObsidian/_prompts/obsidian-session-prompt.md), але копіювати його в кожен чат не потрібно.
 
 Приклад:
 
 ```text
-Book: Clean Code
+Book: Clean Architecture
 Chapter: 1
 Source type: excerpt
 
@@ -41,25 +44,18 @@ Text:
 Створи або онови потрібні нотатки.
 ```
 
-Альтернатива для коротких запитів:
-
-```text
-Онови нотатки для Clean Code, розділ 1, на основі цього уривка:
-<вставте сюди текст>
-```
-
 ## Створення нової книги
 
-Щоб створити шаблон нової книги, можна просто написати запит у чат або явно викликати відповідний skill.
+Щоб створити каркас нової книги, достатньо звичайного запиту або явного виклику skill.
 
-Приклад без явного виклику:
+Приклад:
 
 ```text
 Створи нову книгу "Refactoring" у цьому vault.
 Slug: refactoring
 ```
 
-Приклад з явним викликом skill:
+або
 
 ```text
 $book-vault-scaffold
@@ -69,34 +65,20 @@ Slug: domain-driven-design
 
 Очікуваний результат:
 
-- нова папка книги
+- нова книга в `vault/01-Books/<slug>/`
 - стандартні підпапки `01-Inbox/`, `02-Chapters/`, `03-Concepts/`, `04-Code/`, `05-Summaries/`, `99-Meta/`
-- стартові файли `00-Index.md` і `99-Meta/CODEX_WORKFLOW.md`
+- оновлена навігація в `vault/01-Books/00-Books.md`
 
-## Явний виклик скіла
+## Явний виклик skill
 
-Якщо хочете не покладатися на автоматичний вибір, можете почати повідомлення з назви скіла:
-
-- `$obsidian-book-notes` - для створення або оновлення нотаток з уривка
-- `$book-vault-scaffold` - для створення каркаса нової книги
-
-Приклад для нотаток:
-
-```text
-$obsidian-book-notes
-Book: Clean Code
-Chapter: 2
-Source type: excerpt
-
-Text:
-<вставте сюди текст>
-```
+- `$obsidian-book-notes` - створити або оновити нотатки з уривка
+- `$book-vault-scaffold` - створити каркас нової книги
 
 ## Іменування
 
 - нотатки розділів: `ch-XX-topic.md`
-- нотатки концептів: `concept-topic.md`
+- локальні або спільні концепти: `concept-topic.md` або короткий `topic.md`, якщо контекст очевидний
 - нотатки коду: `code-topic.md`
 - підсумки: `summary-part-name.md`
 
-Для стабільних посилань використовуйте короткі, передбачувані назви файлів.
+Коли існує ризик колізій між книгами, використовуйте path-based посилання на кшталт `[[01-Books/clean-architecture/03-Concepts/concept-boundary]]`.

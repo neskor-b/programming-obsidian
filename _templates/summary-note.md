@@ -27,5 +27,5 @@ source:
 
 ## Посилання
 
-- [[concept-pryklad]]
-- [[ch-01-clean-code-basics]]
+- [[02-Concepts/example-concept]]
+- [[01-Books/book-slug/02-Chapters/ch-01-topic]]
