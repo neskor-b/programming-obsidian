@@ -35,9 +35,15 @@ source: "excerpt"
 - Коли архітектура підлаштована лише під вчорашню форму задач, кожен наступний запит стає дорожчим, навіть якщо його реальний обсяг не зростає. ^clean-architecture-ch02-thesis-cost-growth
 - Система, яка зараз працює, але практично не піддається змінам, з часом стає марною; система, яку легко змінювати, можна зробити коректною й утримувати коректною надалі. ^clean-architecture-ch02-thesis-greater-value
 - Поведінка часто виглядає терміновою, тоді як архітектура є важливою, але не терміновою; саме тому команда має свідомо захищати архітектуру від витіснення короткостроковими фічами. ^clean-architecture-ch02-thesis-eisenhower
+- Матриця Айзенхауера допомагає відрізняти справді важливе від просто термінового: не все, що тисне по часу, однаково цінне для довгострокової корисності системи. ^clean-architecture-ch02-thesis-matrix-priorities
+- У запропонованому порядку пріоритетів архітектура опиняється в перших двох позиціях, бо належить до важливого, тоді як поведінка може бути або водночас важливою й терміновою, або лише терміновою. ^clean-architecture-ch02-thesis-architecture-top-two
 - Відстоювати архітектуру є прямою відповідальністю команди розробки й особливо архітектора, бо бізнес не може самостійно адекватно оцінити її важливість. ^clean-architecture-ch02-thesis-fight
 
 ## Важливі цитати
+
+> The urgent are not important, and the important are never urgent.
+
+^clean-architecture-ch02-quote-eisenhower
 
 > Software was invented to be "soft."
 
@@ -50,6 +56,7 @@ source: "excerpt"
 ## Пов'язані концепти
 
 - [[01-Books/clean-architecture/03-Concepts/two-values-of-software|Дві цінності програмного забезпечення]]
+- [[01-Books/clean-architecture/03-Concepts/architecture-is-important-not-urgent|Архітектура важлива, але не термінова]]
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
 - [[01-Books/clean-architecture/03-Concepts/design-architecture-continuum|Єдність дизайну й архітектури]]
 - [[01-Books/clean-architecture/03-Concepts/cleanliness-preserves-productivity|Охайність зберігає продуктивність]]
@@ -65,4 +72,5 @@ source: "excerpt"
 ## Пов'язані нотатки
 
 - [[01-Books/clean-architecture/03-Concepts/two-values-of-software#^clean-architecture-two-values-definition|Визначення двох цінностей ПЗ]]
+- [[01-Books/clean-architecture/03-Concepts/architecture-is-important-not-urgent#^clean-architecture-important-not-urgent-definition|Визначення архітектури як важливого, але не термінового]]
 - [[02-Concepts/architecture-governs-cost-of-change#^architecture-cost-of-change-definition|Визначення архітектури як чинника вартості змін]]

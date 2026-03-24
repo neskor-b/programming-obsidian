@@ -32,6 +32,7 @@ updated: 2026-03-24
 - [[01-Books/clean-architecture/03-Concepts/design-architecture-continuum|Єдність дизайну й архітектури]]
 - [[01-Books/clean-architecture/03-Concepts/cleanliness-preserves-productivity|Охайність зберігає продуктивність]]
 - [[01-Books/clean-architecture/03-Concepts/two-values-of-software|Дві цінності програмного забезпечення]]
+- [[01-Books/clean-architecture/03-Concepts/architecture-is-important-not-urgent|Архітектура важлива, але не термінова]]
 
 ## Міжкнижкові концепти з цієї книги
 
