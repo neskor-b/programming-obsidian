@@ -8,6 +8,10 @@ fi
 
 book_title="$1"
 book_slug="$2"
+book_note_name="$(printf '%s' "$book_title" | sed 's#[/:]# - #g; s#[?*<>|"]# #g; s#  *# #g; s#^ ##; s# $##')"
+book_note_file="$book_note_name.md"
+yaml_book_title="$(printf '%s' "$book_title" | sed "s/'/''/g")"
+yaml_book_alias="$(printf '%s Index' "$book_title" | sed "s/'/''/g")"
 vault_dir="vault"
 books_dir="$vault_dir/01-Books"
 concepts_dir="$vault_dir/02-Concepts"
@@ -98,15 +102,14 @@ mkdir -p \
   "$book_dir/02-Chapters" \
   "$book_dir/03-Concepts" \
   "$book_dir/04-Code" \
-  "$book_dir/05-Summaries" \
-  "$book_dir/99-Meta"
+  "$book_dir/05-Summaries"
 
-cat > "$book_dir/00-Index.md" <<EOF
+cat > "$book_dir/$book_note_file" <<EOF
 ---
 type: index
-book: $book_title
+book: '$yaml_book_title'
 aliases:
-  - $book_title Index
+  - '$yaml_book_alias'
 tags:
   - book-note
   - index
@@ -125,7 +128,6 @@ updated: $today
 - [[00-Home|Головна]]
 - [[01-Books/00-Books|Усі книги]]
 - [[02-Concepts/00-Concepts|Спільні концепти]]
-- [[01-Books/${book_slug}/99-Meta/CODEX_WORKFLOW|Правила роботи для цієї книги]]
 
 ## Розділи
 
@@ -145,50 +147,7 @@ updated: $today
 - Якщо тема вже охоплює кілька книг, використовуйте [[03-Maps/00-Maps]]
 EOF
 
-cat > "$book_dir/99-Meta/CODEX_WORKFLOW.md" <<EOF
-# Процес Codex для цієї книги
-
-## Що надсилати в Codex
-
-Використовуйте такий формат:
-
-\`\`\`text
-Book: $book_title
-Chapter: 1
-Source type: quote | section | code
-Text:
-...
-\`\`\`
-
-## Що має робити Codex
-
-1. Перевірити наявні нотатки в папці цієї книги.
-2. Перевірити shared notes у \`vault/02-Concepts/\` і релевантні MOC у \`vault/03-Maps/\`.
-3. Вирішити, чи належить ідея до локальної книжкової нотатки, shared concept note або topic map.
-4. Оновити існуючі нотатки, якщо це можливо.
-5. Створити block references для важливих уривків і коду.
-6. Додати \`[[wikilinks]]\` між книжковими та shared нотатками.
-
-## Шаблон block id
-
-Використовуйте читабельні ідентифікатори на кшталт:
-
-- \`^${book_slug}-ch01-rule-01\`
-- \`^${book_slug}-concept-example-definition\`
-- \`^${book_slug}-code-example-01\`
-
-## Карта папок
-
-- \`vault/01-Books/${book_slug}/01-Inbox/\`
-- \`vault/01-Books/${book_slug}/02-Chapters/\`
-- \`vault/01-Books/${book_slug}/03-Concepts/\`
-- \`vault/01-Books/${book_slug}/04-Code/\`
-- \`vault/01-Books/${book_slug}/05-Summaries/\`
-- \`vault/02-Concepts/\`
-- \`vault/03-Maps/\`
-EOF
-
-book_link="- [[01-Books/$book_slug/00-Index|$book_title]]"
+book_link="- [[01-Books/$book_slug/$book_note_name|$book_title]]"
 if ! grep -Fqx "$book_link" "$books_index"; then
   printf '%s\n' "$book_link" >> "$books_index"
 fi

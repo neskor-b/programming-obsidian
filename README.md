@@ -66,7 +66,8 @@ Slug: domain-driven-design
 Очікуваний результат:
 
 - нова книга в `vault/01-Books/<slug>/`
-- стандартні підпапки `01-Inbox/`, `02-Chapters/`, `03-Concepts/`, `04-Code/`, `05-Summaries/`, `99-Meta/`
+- головна нотатка книги з людською назвою, наприклад `Clean Architecture.md`
+- стандартні підпапки `01-Inbox/`, `02-Chapters/`, `03-Concepts/`, `04-Code/`, `05-Summaries/`
 - оновлена навігація в `vault/01-Books/00-Books.md`
 
 ## Явний виклик skill

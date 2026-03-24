@@ -32,9 +32,7 @@ The user may explicitly invoke this skill by starting the message with `$book-va
 - `vault/01-Books/<slug>/03-Concepts/`
 - `vault/01-Books/<slug>/04-Code/`
 - `vault/01-Books/<slug>/05-Summaries/`
-- `vault/01-Books/<slug>/99-Meta/`
-- `vault/01-Books/<slug>/00-Index.md`
-- `vault/01-Books/<slug>/99-Meta/CODEX_WORKFLOW.md`
+- `vault/01-Books/<slug>/<book-title>.md`
 - shared navigation files in `vault/` if they do not exist yet
 
 ## Rules

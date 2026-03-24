@@ -25,13 +25,13 @@ BooksObsidian/
     ├── 01-Books/
     │   ├── 00-Books.md
     │   └── <book-slug>/
-    │       ├── 00-Index.md
+    │       ├── <book-title>.md
     │       ├── 01-Inbox/
     │       ├── 02-Chapters/
     │       ├── 03-Concepts/
     │       ├── 04-Code/
     │       ├── 05-Summaries/
-    │       └── 99-Meta/
+    │       └── ...
     ├── 02-Concepts/
     │   └── 00-Concepts.md
     └── 03-Maps/
@@ -41,6 +41,7 @@ BooksObsidian/
 ## Принцип розділення
 
 - `01-Books/<slug>/...` містить source notes, прив'язані до конкретної книги
+- головна нотатка книги в цій папці має людську назву книги, а не технічний `00-Index`
 - `02-Concepts/` містить evergreen notes, які переживають окрему книгу й можуть накопичувати посилання на кілька джерел
 - `03-Maps/` містить небагато високорівневих навігаційних нотаток для великих тем на кшталт `architecture`, `testing`, `refactoring`
 
