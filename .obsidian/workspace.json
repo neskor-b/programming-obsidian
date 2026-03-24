@@ -178,6 +178,11 @@
   },
   "active": "a3b2aeb1d8a1e67a",
   "lastOpenFiles": [
+    "vault/02-Concepts/plugin-architecture-via-polymorphism.md",
+    "vault/02-Concepts/dependency-inversion.md",
+    "vault/01-Books/clean-architecture/04-Code/c-function-pointers-enable-polymorphism.md",
+    "vault/01-Books/clean-architecture/03-Concepts/oo-controls-dependency-direction-through-polymorphism.md",
+    "vault/01-Books/clean-architecture/02-Chapters/ch-05-object-oriented-programming.md",
     "vault/02-Concepts/tests-falsify-not-prove-correctness.md",
     "vault/01-Books/clean-architecture/03-Concepts/functional-decomposition-needs-structured-programming.md",
     "vault/01-Books/clean-architecture/02-Chapters/ch-04-structured-programming.md"

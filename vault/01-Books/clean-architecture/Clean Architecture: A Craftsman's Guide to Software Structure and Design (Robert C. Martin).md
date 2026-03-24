@@ -28,6 +28,7 @@ updated: 2026-03-24
 - [[01-Books/clean-architecture/02-Chapters/ch-02-a-tale-of-two-values|Розділ 2. Історія про дві цінності]]
 - [[01-Books/clean-architecture/02-Chapters/ch-03-paradigm-overview|Розділ 3. Огляд парадигм]]
 - [[01-Books/clean-architecture/02-Chapters/ch-04-structured-programming|Розділ 4. Структурне програмування]]
+- [[01-Books/clean-architecture/02-Chapters/ch-05-object-oriented-programming|Розділ 5. Об'єктно-орієнтоване програмування]]
 
 ## Локальні концепти
 
@@ -37,11 +38,14 @@ updated: 2026-03-24
 - [[01-Books/clean-architecture/03-Concepts/architecture-is-important-not-urgent|Архітектура важлива, але не термінова]]
 - [[01-Books/clean-architecture/03-Concepts/paradigms-impose-discipline|Парадигми вводять дисципліну через обмеження]]
 - [[01-Books/clean-architecture/03-Concepts/functional-decomposition-needs-structured-programming|Функціональна декомпозиція потребує структурного програмування]]
+- [[01-Books/clean-architecture/03-Concepts/oo-controls-dependency-direction-through-polymorphism|ООП дає контроль над напрямком залежностей через поліморфізм]]
 
 ## Міжкнижкові концепти з цієї книги
 
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
 - [[02-Concepts/tests-falsify-not-prove-correctness|Тести спростовують помилки, а не доводять коректність]]
+- [[02-Concepts/dependency-inversion|Інверсія залежностей]]
+- [[02-Concepts/plugin-architecture-via-polymorphism|Поліморфізм дозволяє будувати plugin architecture]]
 
 ## Робочі папки
 
