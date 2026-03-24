@@ -4,17 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "a3f540145194a413",
+        "id": "ca9a3f0be56d7893",
         "type": "tabs",
         "children": [
           {
-            "id": "227e5bdc26f33649",
+            "id": "dd9d96349e315ed5",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "pinned": true,
             "state": {
-              "type": "empty",
+              "type": "juggl_view",
               "state": {},
+              "pinned": true,
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Juggl"
             }
           }
         ]
@@ -33,6 +44,15 @@
           {
             "id": "109413fc9393364f",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "file-explorer",
               "state": {
@@ -46,6 +66,15 @@
           {
             "id": "b71cc02138c778e4",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "search",
               "state": {
@@ -63,6 +92,15 @@
           {
             "id": "57898f51981878df",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "bookmarks",
               "state": {},
@@ -87,6 +125,15 @@
           {
             "id": "569f5573ce49657d",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "backlink",
               "state": {
@@ -105,6 +152,15 @@
           {
             "id": "5adf2e7630c2fc3b",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "outgoing-link",
               "state": {
@@ -118,6 +174,15 @@
           {
             "id": "5f66d6e80ab73409",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "tag",
               "state": {
@@ -133,6 +198,15 @@
           {
             "id": "b52ff886c4ff0b22",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "all-properties",
               "state": {
@@ -147,6 +221,15 @@
           {
             "id": "5ac49c9f5037d9f8",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "outline",
               "state": {
@@ -161,6 +244,15 @@
           {
             "id": "492e70a162afd112",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "juggl_nodes",
               "state": {},
@@ -171,6 +263,15 @@
           {
             "id": "e5fb926676674cfc",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "juggl_style",
               "state": {},
@@ -197,7 +298,7 @@
       "juggl:Juggl global graph": false
     }
   },
-  "active": "227e5bdc26f33649",
+  "active": "dd9d96349e315ed5",
   "lastOpenFiles": [
     "01-Books/clean-architecture/02-Chapters/ch-02-a-tale-of-two-values.md",
     "01-Books/clean-architecture/03-Concepts/paradigms-impose-discipline.md",
