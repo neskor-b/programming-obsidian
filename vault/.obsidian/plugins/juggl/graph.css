@@ -1,2 +1,10 @@
 
 /* For a full overview of styling options, see https://js.cytoscape.org/#style */
+
+/* Hide global navigation hubs from the Juggl graph. */
+node[type = "home"],
+node[scope = "books"],
+node[scope = "shared-concepts"],
+node[scope = "topic-maps"] {
+  display: none;
+}

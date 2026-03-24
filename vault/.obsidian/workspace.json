@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ca9a3f0be56d7893",
+        "id": "cfea1f5b0020c969",
         "type": "tabs",
         "children": [
           {
-            "id": "dd9d96349e315ed5",
+            "id": "f5661ba15072bc17",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -298,15 +298,15 @@
       "juggl:Juggl global graph": false
     }
   },
-  "active": "dd9d96349e315ed5",
+  "active": "f5661ba15072bc17",
   "lastOpenFiles": [
+    "02-Concepts/00-Concepts.md",
     "01-Books/clean-architecture/02-Chapters/ch-02-a-tale-of-two-values.md",
     "01-Books/clean-architecture/03-Concepts/paradigms-impose-discipline.md",
     "02-Concepts/tests-falsify-not-prove-correctness.md",
     "01-Books/clean-architecture/03-Concepts/functional-decomposition-needs-structured-programming.md",
     "01-Books/clean-architecture/02-Chapters/ch-04-structured-programming.md",
     "03-Maps/00-Maps.md",
-    "02-Concepts/00-Concepts.md",
     "00-Home.md",
     "01-Books/clean-architecture/03-Concepts/cleanliness-preserves-productivity.md",
     "01-Books/clean-architecture/03-Concepts/architecture-is-important-not-urgent.md",
