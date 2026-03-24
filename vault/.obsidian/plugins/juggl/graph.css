@@ -1,13 +1,6 @@
-/* BooksObsidian Juggl graph styling
-   Research basis:
-   - Juggl CSS styling: https://juggl.io/features/styling/css-styling.html
-   - Juggl layouts: https://juggl.io/features/layouts.html
-   - Cytoscape styling reference: https://js.cytoscape.org/#style
-   - General graph-readability guidance: simplify, reduce clutter, choose layout by structure,
-     keep labels legible, and use restrained encodings for type/importance.
-*/
+/* Safer BooksObsidian Juggl graph styling
+   Kept intentionally conservative so Cytoscape/Juggl renders reliably. */
 
-/* Global scaffolding should not participate in the knowledge graph */
 node[path = "00-Home.md"],
 node[path = "01-Books/00-Books.md"],
 node[path = "02-Concepts/00-Concepts.md"],
@@ -15,39 +8,29 @@ node[path = "03-Maps/00-Maps.md"] {
     display: none;
 }
 
-/* Project-specific cleanup for the long book index filename */
 node[path = "01-Books/clean-architecture/Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin).md"] {
     label: "Clean Architecture";
 }
 
-/* Shared visual language: small, calm, readable cards */
 node {
     shape: round-rectangle;
     width: label;
     height: label;
     padding: 7px;
-    corner-radius: 10px;
     background-color: #242b36;
-    background-opacity: 0.94;
     border-width: 1.1px;
     border-color: #4d596d;
-    border-opacity: 0.9;
     label: data(name);
     color: #d9e1ee;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif;
-    font-size: 9.8px;
+    font-size: 10px;
     text-wrap: wrap;
-    text-max-width: 66px;
+    text-max-width: 68px;
     text-halign: center;
     text-valign: center;
     text-justification: center;
-    text-margin-y: 0px;
-    text-background-opacity: 0;
-    text-outline-width: 0;
     overlay-opacity: 0;
 }
 
-/* Prefer semantic labels from frontmatter where available */
 node[title] {
     label: data(title);
 }
@@ -56,174 +39,128 @@ edge {
     width: 1.8px;
     curve-style: straight;
     line-color: #73819a;
-    target-arrow-shape: none;
-    line-style: solid;
     line-opacity: 0.52;
-    z-index: 1;
+    target-arrow-shape: none;
 }
 
-/* Book hub: keep visible but not dominant */
 node[type = "index"][path ^= "01-Books/"] {
     background-color: #583347;
     border-color: #f0a9c8;
     border-width: 1.8px;
     color: #fff3f8;
-    font-size: 12.2px;
-    underlay-color: #c46b94;
-    underlay-opacity: 0.12;
-    underlay-padding: 6px;
-    z-index: 14;
 }
 
-/* Chapter notes: teal reading flow */
 node[type = "chapter"] {
     background-color: #1f4b52;
     border-color: #77d2d9;
-    border-width: 1.2px;
     color: #eefcfd;
-    font-size: 10.8px;
 }
 
-/* Local concepts are the primary knowledge atoms inside a book */
 node[type = "concept"][scope = "book-local"] {
     background-color: #40305f;
     border-color: #c29aff;
-    border-width: 1.25px;
     color: #f7f2ff;
-    font-size: 10.9px;
 }
 
-/* Shared evergreen concepts deserve the strongest emphasis */
 node[type = "concept"][scope = "shared-evergreen"] {
     background-color: #224868;
     border-color: #7fd1ff;
-    border-width: 1.45px;
+    border-width: 1.4px;
     color: #f3fbff;
-    font-size: 11.1px;
 }
 
-/* Topic maps are navigation layers, not the core knowledge atoms */
 node[path ^= "03-Maps/"],
 node[scope = "topic-maps"] {
     background-color: #594224;
     border-color: #e4b46d;
     border-style: dashed;
-    border-width: 1.15px;
     color: #fff3df;
-    font-size: 10.7px;
 }
 
-/* Node size should reflect connectivity, and these rules should win over type defaults */
 node[degree <= 1] {
-    font-size: 8.6px;
+    font-size: 8.8px;
     text-max-width: 52px;
 }
 
 node[degree > 1] {
-    font-size: 10.4px;
-    text-max-width: 72px;
+    font-size: 10.8px;
+    text-max-width: 74px;
 }
 
 node[degree > 2] {
-    font-size: 12px;
-    text-max-width: 94px;
+    font-size: 12.4px;
+    text-max-width: 98px;
 }
 
 node[degree > 4] {
-    font-size: 14px;
+    font-size: 14.4px;
     border-width: 1.5px;
-    text-max-width: 122px;
+    text-max-width: 126px;
 }
 
 node[degree > 6] {
-    font-size: 16.8px;
+    font-size: 17px;
     border-width: 1.8px;
-    text-max-width: 156px;
+    text-max-width: 160px;
 }
 
 node[degree > 8] {
     font-size: 19px;
-    border-width: 2.1px;
-    text-max-width: 192px;
+    border-width: 2px;
+    text-max-width: 194px;
 }
 
-/* Global graph / local graph focus states */
 node.active-node {
-    border-width: 1.7px;
     border-color: #a9d0ff;
+    border-width: 1.7px;
     background-color: #313a52;
-    underlay-color: #78aee8;
-    underlay-opacity: 0.12;
-    underlay-padding: 7px;
-    underlay-shape: round-rectangle;
     color: #f8fbff;
-    z-index: 20;
 }
 
 node.connected-active-node {
     border-color: #87a8d9;
     border-width: 1.4px;
-    background-opacity: 1;
-    z-index: 15;
 }
 
 node.inactive-node {
     background-opacity: 0.18;
-    border-opacity: 0.2;
-    color: #7d8798;
     text-opacity: 0.4;
 }
 
 edge.connected-active-node {
     line-color: #95b5e0;
-    width: 1.8px;
     line-opacity: 0.82;
-    z-index: 12;
 }
 
 edge.inactive-node {
     line-opacity: 0.08;
 }
 
-/* Hover focus: keep only the hovered node and its neighbourhood visible */
 node.unhover,
 edge.unhover {
     display: none;
 }
 
-node.connected-hover {
-    z-index: 18;
-}
-
 edge.connected-hover {
     line-color: #b491ff;
-    width: 1.8px;
     line-opacity: 0.92;
-    z-index: 17;
-}
-
-/* Interaction feedback */
-node:selected {
-    border-color: #c3dcff;
-    border-width: 1.8px;
-    underlay-color: #c3dcff;
-    underlay-opacity: 0.1;
-    underlay-padding: 7px;
 }
 
 node.hover {
     color: #e8eef8;
     text-opacity: 0.96;
     font-weight: 400;
-    z-index: 19;
+}
+
+node:selected {
+    border-color: #c3dcff;
+    border-width: 1.8px;
 }
 
 node.pinned {
-    border-style: solid;
     border-color: #d7c67b;
 }
 
-/* Clean hiding for filtered nodes */
 node.filtered,
 node.hard-filtered,
 edge.filtered,
