@@ -9,12 +9,12 @@ Use this skill when the user wants to add a new book to the vault and quickly cr
 
 ## What To Do
 
-1. Take the book title from the user.
+1. Take the book title from the user and also the author if it is provided.
 2. Prepare a short lowercase slug with hyphens, for example `clean-architecture`.
 3. Run the script:
 
 ```bash
-bash .agents/skills/book-vault-scaffold/scripts/create-book-vault.sh "Book Title" "book-slug"
+bash .agents/skills/book-vault-scaffold/scripts/create-book-vault.sh "Book Title" "book-slug" "Author Name"
 ```
 
 4. Verify the created files.
@@ -41,3 +41,4 @@ The user may explicitly invoke this skill by starting the message with `$book-va
 - The generated Markdown content and the user-facing summary must be in Ukrainian unless the user explicitly asks for another language.
 - Do not overwrite an existing book folder.
 - If the slug is not provided explicitly, generate it before running the script.
+- If the user provides an author, pass it to the script so the book note frontmatter includes `author` and the books index label includes the author too.

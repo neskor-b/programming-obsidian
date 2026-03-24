@@ -1,7 +1,9 @@
 ---
 type: index
 book: 'A Philosophy of Software Design'
+author: 'John Ousterhout'
 aliases:
+  - 'A Philosophy of Software Design (John Ousterhout)'
   - 'A Philosophy of Software Design Index'
 tags:
   - book-note

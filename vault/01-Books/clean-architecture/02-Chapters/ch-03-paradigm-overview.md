@@ -17,7 +17,7 @@ source: "excerpt"
 
 ## Контекст
 
-- Книга: [[01-Books/clean-architecture/Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin)|Clean Architecture]]
+- Книга: [[01-Books/clean-architecture/Clean Architecture (Robert C. Martin)|Clean Architecture]]
 - Розділ: 3
 - Тип джерела: уривок
 
@@ -56,7 +56,7 @@ source: "excerpt"
 
 ## Книжкові джерела або продовження
 
-- [[01-Books/clean-architecture/Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin)|Нотатка книги]]
+- [[01-Books/clean-architecture/Clean Architecture (Robert C. Martin)|Нотатка книги]]
 
 ## Пов'язані нотатки
 

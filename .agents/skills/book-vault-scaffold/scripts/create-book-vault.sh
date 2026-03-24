@@ -1,17 +1,28 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if [ "$#" -lt 2 ]; then
-  echo "Usage: $0 \"Book Title\" slug-name" >&2
+if [ "$#" -lt 2 ] || [ "$#" -gt 3 ]; then
+  echo "Usage: $0 \"Book Title\" slug-name [\"Author Name\"]" >&2
   exit 1
 fi
 
 book_title="$1"
 book_slug="$2"
+book_author="${3:-}"
 book_note_name="$(printf '%s' "$book_title" | sed 's#[/:]# - #g; s#[?*<>|"]# #g; s#  *# #g; s#^ ##; s# $##')"
 book_note_file="$book_note_name.md"
 yaml_book_title="$(printf '%s' "$book_title" | sed "s/'/''/g")"
 yaml_book_alias="$(printf '%s Index' "$book_title" | sed "s/'/''/g")"
+yaml_book_author=""
+yaml_book_author_alias=""
+book_link_label="$book_title"
+
+if [ -n "$book_author" ]; then
+  yaml_book_author="$(printf '%s' "$book_author" | sed "s/'/''/g")"
+  yaml_book_author_alias="$(printf '%s (%s)' "$book_title" "$book_author" | sed "s/'/''/g")"
+  book_link_label="$book_title ($book_author)"
+fi
+
 vault_dir="vault"
 books_dir="$vault_dir/01-Books"
 concepts_dir="$vault_dir/02-Concepts"
@@ -108,7 +119,25 @@ cat > "$book_dir/$book_note_file" <<EOF
 ---
 type: index
 book: '$yaml_book_title'
+EOF
+
+if [ -n "$yaml_book_author" ]; then
+  cat >> "$book_dir/$book_note_file" <<EOF
+author: '$yaml_book_author'
+EOF
+fi
+
+cat >> "$book_dir/$book_note_file" <<EOF
 aliases:
+EOF
+
+if [ -n "$yaml_book_author_alias" ]; then
+  cat >> "$book_dir/$book_note_file" <<EOF
+  - '$yaml_book_author_alias'
+EOF
+fi
+
+cat >> "$book_dir/$book_note_file" <<EOF
   - '$yaml_book_alias'
 tags:
   - book-note
@@ -147,7 +176,7 @@ updated: $today
 - Якщо тема вже охоплює кілька книг, використовуйте [[03-Maps/00-Maps]]
 EOF
 
-book_link="- [[01-Books/$book_slug/$book_note_name|$book_title]]"
+book_link="- [[01-Books/$book_slug/$book_note_name|$book_link_label]]"
 if ! grep -Fqx -- "$book_link" "$books_index"; then
   printf '%s\n' "$book_link" >> "$books_index"
 fi

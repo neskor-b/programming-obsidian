@@ -1,8 +1,12 @@
 ---
 type: index
-book: 'Clean Architecture: A Craftsman''s Guide to Software Structure and Design (Robert C. Martin)'
+book: 'Clean Architecture'
+author: 'Robert C. Martin'
 aliases:
-  - 'Clean Architecture: A Craftsman''s Guide to Software Structure and Design (Robert C. Martin) Index'
+  - 'Clean Architecture (Robert C. Martin)'
+  - 'Clean Architecture: A Craftsman''s Guide to Software Structure and Design'
+  - 'Clean Architecture: A Craftsman''s Guide to Software Structure and Design (Robert C. Martin)'
+  - 'Clean Architecture Index'
 tags:
   - book-note
   - index
@@ -10,7 +14,7 @@ created: 2026-03-24
 updated: 2026-03-24
 ---
 
-# Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin)
+# Clean Architecture
 
 ## Призначення
 
