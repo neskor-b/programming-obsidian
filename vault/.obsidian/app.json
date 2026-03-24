@@ -1,0 +1,9 @@
+{
+  "defaultViewMode": "preview",
+  "alwaysUpdateLinks": true,
+  "userIgnoreFilters": [
+    "/00-Home.md",
+    "/01-Books/00-Books.md",
+    "/02-Concepts/00-Concepts.md"
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "51d7247b24502ea3",
+    "type": "split",
+    "children": [
+      {
+        "id": "f44b7b6b20b3aeb6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "492cab84f7e153b2",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8f4220e8d1e7881a",
+    "type": "split",
+    "children": [
+      {
+        "id": "a396d98f08d302a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "109413fc9393364f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "b71cc02138c778e4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#index",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "57898f51981878df",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 389.5
+  },
+  "right": {
+    "id": "33796d9fddc83d1e",
+    "type": "split",
+    "children": [
+      {
+        "id": "dff9f54d68c4b5c2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "569f5573ce49657d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "5adf2e7630c2fc3b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "5f66d6e80ab73409",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b52ff886c4ff0b22",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "5ac49c9f5037d9f8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "b8bf30d745f01211",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {},
+              "icon": "ag-node-list",
+              "title": "Juggl nodes"
+            }
+          },
+          {
+            "id": "14a64f2987992a2d",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {},
+              "icon": "ag-style",
+              "title": "Juggl style"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "juggl:Juggl global graph": false
+    }
+  },
+  "active": "492cab84f7e153b2",
+  "lastOpenFiles": [
+    "01-Books/clean-architecture/03-Concepts/design-architecture-continuum.md",
+    "02-Concepts/00-Concepts.md",
+    "00-Home.md",
+    "02-Concepts/architecture-governs-cost-of-change.md",
+    "01-Books/clean-architecture/Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin).md",
+    "01-Books/clean-architecture/02-Chapters/ch-03-paradigm-overview.md",
+    "01-Books/clean-architecture/03-Concepts/paradigms-impose-discipline.md",
+    "01-Books/clean-architecture/02-Chapters/ch-02-a-tale-of-two-values.md",
+    "01-Books/clean-architecture/02-Chapters/ch-01-design-and-architecture.md",
+    "01-Books/clean-architecture/03-Concepts/two-values-of-software.md",
+    "01-Books/clean-architecture/03-Concepts/cleanliness-preserves-productivity.md",
+    "01-Books/00-Books.md",
+    "01-Books/clean-architecture/03-Concepts/Парадигми вводять дисципліну через обмеження.md",
+    "01-Books/clean-architecture/03-Concepts/architecture-is-important-not-urgent.md",
+    "2026-03-24.md",
+    "01-Books/clean-architecture/00-Index.md"
+  ]
+}
