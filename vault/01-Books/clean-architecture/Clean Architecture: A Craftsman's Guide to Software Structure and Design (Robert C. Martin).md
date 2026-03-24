@@ -25,11 +25,17 @@ updated: 2026-03-24
 ## Розділи
 
 - [[01-Books/clean-architecture/02-Chapters/ch-01-design-and-architecture|Розділ 1. Що таке дизайн і архітектура]]
+- [[01-Books/clean-architecture/02-Chapters/ch-02-a-tale-of-two-values|Розділ 2. Історія про дві цінності]]
 
 ## Локальні концепти
 
 - [[01-Books/clean-architecture/03-Concepts/design-architecture-continuum|Єдність дизайну й архітектури]]
 - [[01-Books/clean-architecture/03-Concepts/cleanliness-preserves-productivity|Охайність зберігає продуктивність]]
+- [[01-Books/clean-architecture/03-Concepts/two-values-of-software|Дві цінності програмного забезпечення]]
+
+## Міжкнижкові концепти з цієї книги
+
+- [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
 
 ## Робочі папки
 
