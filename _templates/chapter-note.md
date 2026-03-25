@@ -1,11 +1,13 @@
 ---
 type: chapter
-book: ""
+source_type: ""
+source_slug: ""
+source_title: ""
 chapter: ""
 title: ""
 aliases: []
 tags:
-  - book-note
+  - source-note
   - chapter
 created:
 updated:
@@ -16,13 +18,14 @@ source:
 
 ## Контекст
 
-- Книга:
-- Розділ:
-- Сторінки джерела:
+- Джерело:
+- Тип джерела:
+- Розділ або модуль:
+- Сторінки або сегмент джерела:
 
 ## Головна ідея
 
-Короткий підсумок розділу.
+Короткий підсумок розділу або модуля.
 
 ^main-idea
 
@@ -44,12 +47,13 @@ source:
 
 ## Пов'язані приклади коду
 
-- [[01-Books/book-slug/04-Code/code-example]]
+- [[01-Sources/books/book-slug/04-Code/code-example]]
 
-## Книжкові джерела або продовження
+## Джерело та продовження
 
-- [[01-Books/book-slug/book-title|Нотатка книги]]
+- [[01-Sources/books/book-slug/source-title|Нотатка джерела]]
 
 ## Пов'язані нотатки
 
 - [[03-Maps/example-topic-map]]
+- [[04-Playbooks/playbook-example]]

@@ -1,10 +1,12 @@
 ---
 type: summary
-book: ""
+source_type: ""
+source_slug: ""
+source_title: ""
 title: ""
 aliases: []
 tags:
-  - book-note
+  - source-note
   - summary
 created:
 updated:
@@ -28,4 +30,5 @@ source:
 ## Посилання
 
 - [[02-Concepts/example-concept]]
-- [[01-Books/book-slug/02-Chapters/ch-01-topic]]
+- [[01-Sources/books/book-slug/02-Chapters/ch-01-topic]]
+- [[04-Playbooks/playbook-example]]

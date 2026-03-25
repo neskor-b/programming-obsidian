@@ -1,15 +1,14 @@
 ---
 type: concept
-book: ""
 scope: "shared-evergreen"
-books:
+sources:
   - "a-philosophy-of-software-design"
 title: "Складність є центральною проблемою дизайну ПЗ"
 aliases:
   - "Complexity is the central design problem"
   - "Software design is about complexity"
 tags:
-  - book-note
+  - source-note
   - concept
 created: 2026-03-24
 updated: 2026-03-24
@@ -34,19 +33,19 @@ source: "synthesis"
 - Команда дедалі частіше сповільнюється через страх побічних ефектів, ручну перевірку та регресії.
 - Для розуміння локальної поведінки доводиться читати занадто багато стороннього коду, документації чи історичних домовленостей.
 
-## Книжки-джерела
+## Джерела
 
-- [[01-Books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity#^aphsd-ch01-main-idea]]
-- [[01-Books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity#^aphsd-ch01-thesis-understanding]]
-- [[01-Books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity#^aphsd-ch01-thesis-accumulates]]
-- [[01-Books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity#^aphsd-ch01-quote-complexity]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity#^aphsd-ch01-main-idea]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity#^aphsd-ch01-thesis-understanding]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity#^aphsd-ch01-thesis-accumulates]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity#^aphsd-ch01-quote-complexity]]
 
 ## Пов'язані концепти
 
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
-- [[01-Books/a-philosophy-of-software-design/03-Concepts/modular-design-encapsulates-complexity|Модульний дизайн інкапсулює складність]]
-- [[01-Books/a-philosophy-of-software-design/03-Concepts/design-is-continuous-and-incremental|Дизайн є безперервним та інкрементальним]]
-- [[01-Books/a-philosophy-of-software-design/03-Concepts/red-flags-guide-design-judgment|Red flags спрямовують дизайнерське судження]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/modular-design-encapsulates-complexity|Модульний дизайн інкапсулює складність]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/design-is-continuous-and-incremental|Дизайн є безперервним та інкрементальним]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/red-flags-guide-design-judgment|Red flags спрямовують дизайнерське судження]]
 
 ## Пов'язаний код
 

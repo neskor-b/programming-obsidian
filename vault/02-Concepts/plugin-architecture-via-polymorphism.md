@@ -1,15 +1,14 @@
 ---
 type: concept
-book: ""
 scope: "shared-evergreen"
-books:
+sources:
   - "clean-architecture"
 title: "Поліморфізм дозволяє будувати plugin architecture"
 aliases:
   - "Plugin architecture via polymorphism"
   - "Details as plugins"
 tags:
-  - book-note
+  - source-note
   - concept
 created: 2026-03-24
 updated: 2026-03-24
@@ -34,18 +33,18 @@ source: "synthesis"
 - Новий тип пристрою, сховища чи транспорту додається новою реалізацією, а не переписуванням основного сценарію.
 - Компоненти можна збирати або розгортати окремо, бо їхній зв'язок проходить через явно визначені межі.
 
-## Книжки-джерела
+## Джерела
 
-- [[01-Books/clean-architecture/02-Chapters/ch-05-object-oriented-programming#^clean-architecture-ch05-thesis-polymorphism-history]]
-- [[01-Books/clean-architecture/02-Chapters/ch-05-object-oriented-programming#^clean-architecture-ch05-thesis-plugins]]
-- [[01-Books/clean-architecture/02-Chapters/ch-05-object-oriented-programming#^clean-architecture-ch05-thesis-independent-components]]
-- [[01-Books/clean-architecture/04-Code/c-function-pointers-enable-polymorphism#^clean-architecture-ch05-code-function-pointers]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-05-object-oriented-programming#^clean-architecture-ch05-thesis-polymorphism-history]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-05-object-oriented-programming#^clean-architecture-ch05-thesis-plugins]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-05-object-oriented-programming#^clean-architecture-ch05-thesis-independent-components]]
+- [[01-Sources/books/clean-architecture/04-Code/c-function-pointers-enable-polymorphism#^clean-architecture-ch05-code-function-pointers]]
 
 ## Пов'язані концепти
 
 - [[02-Concepts/dependency-inversion|Інверсія залежностей]]
-- [[01-Books/clean-architecture/03-Concepts/oo-controls-dependency-direction-through-polymorphism|ООП дає контроль над напрямком залежностей через поліморфізм]]
+- [[01-Sources/books/clean-architecture/03-Concepts/oo-controls-dependency-direction-through-polymorphism|ООП дає контроль над напрямком залежностей через поліморфізм]]
 
 ## Пов'язаний код
 
-- [[01-Books/clean-architecture/04-Code/c-function-pointers-enable-polymorphism|Вказівники на функції в C як основа поліморфізму]]
+- [[01-Sources/books/clean-architecture/04-Code/c-function-pointers-enable-polymorphism|Вказівники на функції в C як основа поліморфізму]]
