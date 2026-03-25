@@ -1,14 +1,13 @@
 ---
-type: chapter
+type: note
 source_type: ""
 source_slug: ""
 source_title: ""
-chapter: ""
 title: ""
 aliases: []
 tags:
   - source-note
-  - chapter
+  - note
 created:
 updated:
 source:
@@ -20,12 +19,11 @@ source:
 
 - Джерело:
 - Тип джерела:
-- Розділ або модуль:
-- Сторінки або сегмент джерела:
+- Сегмент або розділ:
 
 ## Головна ідея
 
-Короткий підсумок розділу або модуля.
+Короткий підсумок конкретної тези або фрагмента джерела.
 
 ^main-idea
 
@@ -41,25 +39,15 @@ source:
 - Правило 2
 - Правило 3
 
-## Важливі цитати
-
-> Цитата
-
-^quote-01
-
 ## Пов'язані концепти
 
 - [[02-Concepts/example-concept]]
 
-## Пов'язані приклади коду
+## Пов'язаний код
 
-- [[01-Sources/books/book-slug/04-Code/code-example]]
+- [[01-Sources/docs/doc-slug/04-Code/code-example]]
 
 ## Джерело та продовження
 
-- [[01-Sources/books/book-slug/source-title|Нотатка джерела]]
-
-## Пов'язані нотатки
-
-- [[03-Maps/example-topic-map]]
+- [[01-Sources/docs/doc-slug/source-title|Нотатка джерела]]
 - [[04-Playbooks/playbook-example]]

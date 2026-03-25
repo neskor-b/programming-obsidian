@@ -1,0 +1,54 @@
+---
+type: index
+source_type: 'books'
+source_slug: 'a-philosophy-of-software-design'
+source_title: 'A Philosophy of Software Design'
+author: 'John Ousterhout'
+aliases:
+  - 'A Philosophy of Software Design (John Ousterhout)'
+  - 'A Philosophy of Software Design Index'
+tags:
+  - source-note
+  - index
+created: 2026-03-24
+updated: 2026-03-25
+---
+
+# A Philosophy of Software Design
+
+## Призначення
+
+Центральна карта нотаток, побудованих на основі цієї книги.
+
+## Навігація
+
+- [[00-Home|Головна]]
+- [[01-Sources/00-Sources|Усі джерела]]
+- [[01-Sources/books/00-Books|Книги]]
+- [[02-Concepts/00-Concepts|Спільні концепти]]
+- [[04-Playbooks/00-Playbooks|Плейбуки]]
+
+## Розділи
+
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity|Розділ 1. Вступ: усе зводиться до складності]]
+
+## Локальні концепти
+
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/design-is-continuous-and-incremental|Дизайн є безперервним та інкрементальним]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/modular-design-encapsulates-complexity|Модульний дизайн інкапсулює складність]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/red-flags-guide-design-judgment|Red flags спрямовують дизайнерське судження]]
+
+## Робочі папки
+
+- `01-Inbox/` для сирих уривків
+- `02-Chapters/` для нотаток розділів
+- `03-Concepts/` для локальних концептів книги
+- `04-Code/` для прикладів коду
+
+Короткий підсумок розділу та практичні правила варто тримати всередині відповідної нотатки розділу.
+
+## Міжджерельні зв'язки
+
+- Повторювані концепти виносьте в [[02-Concepts/00-Concepts]]
+- Якщо тема вже охоплює кілька джерел, використовуйте [[03-Maps/00-Maps]]
+- Для цієї книги першим спільним концептом став [[02-Concepts/complexity-is-the-central-design-problem|Складність є центральною проблемою дизайну ПЗ]]

@@ -1,12 +1,14 @@
 ---
 type: concept
-book: ""
 scope: ""
-books: []
+source_type: ""
+source_slug: ""
+source_title: ""
+sources: []
 title: ""
 aliases: []
 tags:
-  - book-note
+  - source-note
   - concept
 created:
 updated:
@@ -30,10 +32,10 @@ source:
 - Ознака 1
 - Ознака 2
 
-## Книжки-джерела
+## Джерела
 
-- [[01-Books/book-slug/03-Concepts/concept-topic#^source-block]]
-- [[01-Books/another-book/02-Chapters/ch-02-topic#^source-block]]
+- [[01-Sources/books/book-slug/03-Concepts/concept-topic#^source-block]]
+- [[01-Sources/articles/article-slug/02-Notes/note-topic#^source-block]]
 
 ## Пов'язані концепти
 
@@ -41,4 +43,8 @@ source:
 
 ## Пов'язаний код
 
-- [[01-Books/book-slug/04-Code/code-topic]]
+- [[01-Sources/books/book-slug/04-Code/code-topic]]
+
+## Пов'язані playbooks
+
+- [[04-Playbooks/playbook-example]]

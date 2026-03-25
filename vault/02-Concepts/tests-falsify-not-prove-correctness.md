@@ -1,15 +1,14 @@
 ---
 type: concept
-book: ""
 scope: "shared-evergreen"
-books:
+sources:
   - "clean-architecture"
 title: "Тести спростовують помилки, а не доводять коректність"
 aliases:
   - "Tests falsify, not prove correctness"
   - "Testing shows presence, not absence of bugs"
 tags:
-  - book-note
+  - source-note
   - concept
 created: 2026-03-24
 updated: 2026-03-24
@@ -34,17 +33,17 @@ source: "synthesis"
 - Компоненти мають чіткі входи, виходи та межі, щоб помилку можна було локалізувати.
 - Команда трактує "зелений" набір тестів як тимчасову робочу впевненість, а не як абсолютний доказ.
 
-## Книжки-джерела
+## Джерела
 
-- [[01-Books/clean-architecture/02-Chapters/ch-04-structured-programming#^clean-architecture-ch04-thesis-science-not-math]]
-- [[01-Books/clean-architecture/02-Chapters/ch-04-structured-programming#^clean-architecture-ch04-thesis-tests-falsify]]
-- [[01-Books/clean-architecture/02-Chapters/ch-04-structured-programming#^clean-architecture-ch04-thesis-architecture]]
-- [[01-Books/clean-architecture/02-Chapters/ch-04-structured-programming#^clean-architecture-ch04-quote-testing]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-04-structured-programming#^clean-architecture-ch04-thesis-science-not-math]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-04-structured-programming#^clean-architecture-ch04-thesis-tests-falsify]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-04-structured-programming#^clean-architecture-ch04-thesis-architecture]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-04-structured-programming#^clean-architecture-ch04-quote-testing]]
 
 ## Пов'язані концепти
 
-- [[01-Books/clean-architecture/03-Concepts/functional-decomposition-needs-structured-programming|Функціональна декомпозиція потребує структурного програмування]]
-- [[01-Books/clean-architecture/03-Concepts/design-architecture-continuum|Єдність дизайну й архітектури]]
+- [[01-Sources/books/clean-architecture/03-Concepts/functional-decomposition-needs-structured-programming|Функціональна декомпозиція потребує структурного програмування]]
+- [[01-Sources/books/clean-architecture/03-Concepts/design-architecture-continuum|Єдність дизайну й архітектури]]
 
 ## Пов'язаний код
 

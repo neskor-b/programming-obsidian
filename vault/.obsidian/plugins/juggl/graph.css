@@ -3,8 +3,11 @@
 
 /* Hide global navigation hubs from the Juggl graph. */
 node[type = "home"],
-node[scope = "books"],
+node[scope = "sources"],
+node[scope = "source-type-index"],
 node[scope = "shared-concepts"],
-node[scope = "topic-maps"] {
+node[scope = "topic-maps"],
+node[scope = "playbooks"],
+node[scope = "inbox"] {
   display: none;
 }

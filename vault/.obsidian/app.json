@@ -3,7 +3,14 @@
   "alwaysUpdateLinks": true,
   "userIgnoreFilters": [
     "/00-Home.md",
-    "/01-Books/00-Books.md",
-    "/02-Concepts/00-Concepts.md"
+    "/01-Sources/00-Sources.md",
+    "/01-Sources/books/00-Books.md",
+    "/01-Sources/articles/00-Articles.md",
+    "/01-Sources/docs/00-Docs.md",
+    "/01-Sources/courses/00-Courses.md",
+    "/02-Concepts/00-Concepts.md",
+    "/03-Maps/00-Maps.md",
+    "/04-Playbooks/00-Playbooks.md",
+    "/05-Inbox/00-Inbox.md"
   ]
 }
