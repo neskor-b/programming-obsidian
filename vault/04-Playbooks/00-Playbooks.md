@@ -17,4 +17,4 @@ updated: 2026-03-25
 
 ## Наявні плейбуки
 
-- Поки що плейбуки ще не створені.
+- [[04-Playbooks/approach-a-system-design-problem|Як підходити до задачі system design]]
