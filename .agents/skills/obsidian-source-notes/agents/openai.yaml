@@ -1,0 +1,4 @@
+interface:
+  display_name: "Obsidian Source Notes"
+  short_description: "Turn programming sources into scalable, well-linked Obsidian notes"
+  default_prompt: "Create or update linked Obsidian Markdown notes from programming sources, use retrieval-first linking across the vault, and keep the final note content in Ukrainian."

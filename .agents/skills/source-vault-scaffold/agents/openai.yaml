@@ -1,0 +1,4 @@
+interface:
+  display_name: "Source Vault Scaffold"
+  short_description: "Create a new source scaffold in this Obsidian vault"
+  default_prompt: "Create the standard folder structure for a new programming source in this Obsidian vault and keep all generated content in Ukrainian."
