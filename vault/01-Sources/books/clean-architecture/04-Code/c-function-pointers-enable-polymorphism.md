@@ -2,6 +2,7 @@
 type: code
 source_type: "books"
 source_slug: "clean-architecture"
+source_title: "Clean Architecture"
 title: "Вказівники на функції в C як основа поліморфізму"
 aliases:
   - "C function pointers enable polymorphism"
@@ -9,7 +10,7 @@ tags:
   - source-note
   - code
 created: 2026-03-24
-updated: 2026-03-24
+updated: 2026-03-25
 source: "chapter-5-excerpt"
 ---
 

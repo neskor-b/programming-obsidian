@@ -5,7 +5,7 @@ description: Create and update linked Obsidian Markdown notes from programming s
 
 # Obsidian Source Notes
 
-Use this skill when programming sources need to be turned into linked Obsidian Markdown notes.
+Use this skill to turn programming sources into linked Obsidian notes in `vault/`.
 
 Supported source types:
 
@@ -14,91 +14,49 @@ Supported source types:
 - `docs`
 - `courses`
 
-## Goal
+## Workflow
 
-Create or update `.md` files that:
+1. Inspect `vault/01-Sources/<source-type>/<source-slug>/` before writing.
+2. Route each idea first:
+   - `source-local`: bound to one source
+   - `shared-evergreen`: reusable across sources
+   - `topic-map`: broad topic with many links
+   - `playbook`: procedure or checklist
+   - `capture`: raw fragment that is not ready yet
+3. Search narrowly before reading bodies:
+   - current source folder
+   - `vault/02-Concepts/`
+   - `vault/04-Playbooks/`
+   - `vault/03-Maps/` only for broad themes
+4. Read only the best 3-7 matches. Rank by filename, aliases, frontmatter, existing links, and opening summary.
+5. Update an existing note if it already covers the idea.
+6. Write to the correct folder:
+   - books: `02-Chapters/`, `03-Concepts/`, `04-Code/`
+   - articles/docs/courses: `02-Notes/`, `03-Concepts/`, `04-Code/`
+   - raw input: `05-Inbox/` or local `01-Inbox/`
+7. Link only notes that improve navigation, provenance, or synthesis.
 
-- are clean Obsidian notes
-- use `[[wikilinks]]`
-- use block IDs for precise references
-- avoid duplication
-- connect source notes, concept notes, code notes, and playbooks
-- support links between multiple sources through shared concept notes
-- scale to large vaults by using retrieval-first linking instead of scanning everything
+## Rules
 
-## Process
-
-1. Inspect the target source folder in `vault/01-Sources/<source-type>/<source-slug>/` before writing.
-2. Decide the routing first:
-   - `source-local` for source-bound notes
-   - `shared-evergreen` for concepts that recur across sources
-   - `topic-map` for dense cross-source themes with many related notes
-   - `playbook` for practical procedures or checklists
-   - `capture` for raw fragments that still need structuring
-3. Build a small candidate set before opening note bodies:
-   - search the current source folder first
-   - then search `vault/02-Concepts/`
-   - then search `vault/04-Playbooks/`
-   - then search relevant notes in `vault/03-Maps/` only if the topic is broad
-4. Rank candidates by the strongest signals first:
-   - exact or near-exact file name match
-   - `aliases`, `type`, `scope`, `source_type`, `source_slug`, and other frontmatter metadata
-   - existing `[[wikilinks]]` and block IDs
-   - short summaries or opening paragraphs
-   - full body text only for the top few candidates
-5. Read deeply only the best 3-7 candidates. Do not scan the whole vault.
-6. If the idea already exists, reuse the existing note.
-7. If the source material is still raw, first save or update a capture in `vault/05-Inbox/` or in `vault/01-Sources/<source-type>/<source-slug>/01-Inbox/` when needed.
-8. Create or update stable notes in the source folder:
-   - `02-Chapters/` for books when chapter structure matters
-   - `02-Notes/` for articles, docs, and courses
-   - `03-Concepts/`
-   - `04-Code/`
-9. When an idea becomes cross-source and evergreen, create or update a shared note in `vault/02-Concepts/`.
-10. When the output is procedural, create or update a playbook in `vault/04-Playbooks/`.
-11. Keep a short summary inside the main `chapter` or `note`, add source metadata, links, and block IDs.
-12. Keep file names short, predictable, and lowercase.
-13. Use path-based wikilinks when file names may collide across sources.
-
-## Explicit Invocation
-
-The user may explicitly invoke this skill by starting the message with `$obsidian-source-notes` before the source text. Treat that as a strong signal to use this skill immediately.
-
-## Note Rules
-
-- Keep the skill instructions and metadata in English.
+- Keep the skill itself in English.
+- Final note content must be in Ukrainian unless the user asks otherwise.
 - One note equals one stable idea.
-- All final user-facing note content must be in Ukrainian unless the user explicitly asks for another language.
-- Headings, summaries, explanations, lists, and note sections must be in Ukrainian.
-- Keep English only for code, identifiers, library names, APIs, patterns, and quoted source text when needed.
-- Use block IDs such as `^ca-ch02-rule-01`.
-- When precise linking matters, point to a specific block ID in an existing note.
-- Preserve source provenance: keep source-bound material in the source folder and synthesize shared ideas in `vault/02-Concepts/`.
-- Do not create standalone summary notes by default; keep concise summaries and practical takeaways inside the primary source note.
+- Prefer updating over creating a duplicate.
+- Use `[[wikilinks]]`; use path-based links when names may collide.
+- Add stable block IDs for definitions, claims, quotes, and code anchors.
+- Keep source-bound material in the source folder.
+- Move reusable synthesis to `vault/02-Concepts/`.
+- Move procedures and checklists to `vault/04-Playbooks/`.
+- Do not create standalone summary notes by default.
+- Keep filenames short, lowercase, and predictable.
 
-## Optimized Linking Rules
+## Metadata
 
-- Prefer retrieval over brute-force reading. Narrow the search space before opening note content.
-- Search order matters: current source first, shared concepts second, playbooks third, topic maps fourth.
-- Treat file names, aliases, frontmatter, and existing links as primary retrieval signals.
-- Treat tags as weak supporting signals only. Never rely on tags alone for linking decisions.
-- Read full text only for the top candidates that survive metadata filtering.
-- Add only purposeful links. A note should usually link to the few notes that genuinely help navigation or synthesis.
-- Avoid quadratic linking. Do not link every related note to every other related note.
-- Prefer hub-and-spoke structures:
-  - source-local notes link to the most relevant shared concept or playbook
-  - shared concepts link back to precise source-local blocks
-  - topic maps link to shared concepts and major source entry points
-
-## Metadata Expectations
-
-For scale, keep notes easy to retrieve:
-
-- Start the note with a short summary or definition.
-- Keep frontmatter accurate and minimal.
-- Use `aliases` for common alternative names.
-- For shared notes and playbooks, keep `scope` and `sources` current when relevant.
-- Use stable block IDs for the exact claim, quote, or rule that another note should reference.
+- Start each note with a short summary or definition.
+- Keep frontmatter minimal and correct.
+- Source-bound notes should keep `source_type`, `source_slug`, and `source_title`.
+- Shared notes and playbooks should keep `scope` and `sources` current when relevant.
+- Add `aliases` only when they improve retrieval.
 
 ## Templates
 
@@ -111,8 +69,6 @@ Open the matching template before writing:
 - [_templates/playbook-note.md](/Users/bohdanne/Desktop/bohdan/ProgrammingObsidian/_templates/playbook-note.md)
 - [_templates/capture-note.md](/Users/bohdanne/Desktop/bohdan/ProgrammingObsidian/_templates/capture-note.md)
 
-## Optional Session Prompt
-
-For reusable instructions that can help set the tone of a session, see this optional reference:
+## Optional Prompt
 
 - [_prompts/obsidian-session-prompt.md](/Users/bohdanne/Desktop/bohdan/ProgrammingObsidian/_prompts/obsidian-session-prompt.md)

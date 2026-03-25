@@ -26,12 +26,17 @@ updated: 2026-03-25
 - [[01-Sources/00-Sources|Усі джерела]]
 - [[01-Sources/books/00-Books|Книги]]
 - [[02-Concepts/00-Concepts|Спільні концепти]]
-- [[04-Playbooks/00-Playbooks|Playbooks]]
+- [[04-Playbooks/00-Playbooks|Плейбуки]]
 
 ## Розділи
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity|Розділ 1. Вступ: усе зводиться до складності]]
-- [[01-Sources/books/a-philosophy-of-software-design/05-Summaries/ch-01-introduction-summary|Підсумок розділу 1]]
+
+## Локальні концепти
+
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/design-is-continuous-and-incremental|Дизайн є безперервним та інкрементальним]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/modular-design-encapsulates-complexity|Модульний дизайн інкапсулює складність]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/red-flags-guide-design-judgment|Red flags спрямовують дизайнерське судження]]
 
 ## Робочі папки
 
@@ -40,10 +45,10 @@ updated: 2026-03-25
 - `03-Concepts/` для локальних концептів книги
 - `04-Code/` для прикладів коду
 
-Короткий підсумок розділу та практичні правила варто тримати всередині відповідної chapter note.
+Короткий підсумок розділу та практичні правила варто тримати всередині відповідної нотатки розділу.
 
 ## Міжджерельні зв'язки
 
 - Повторювані концепти виносьте в [[02-Concepts/00-Concepts]]
 - Якщо тема вже охоплює кілька джерел, використовуйте [[03-Maps/00-Maps]]
-- Для цієї книги першим shared concept став [[02-Concepts/complexity-is-the-central-design-problem|Складність є центральною проблемою дизайну ПЗ]]
+- Для цієї книги першим спільним концептом став [[02-Concepts/complexity-is-the-central-design-problem|Складність є центральною проблемою дизайну ПЗ]]

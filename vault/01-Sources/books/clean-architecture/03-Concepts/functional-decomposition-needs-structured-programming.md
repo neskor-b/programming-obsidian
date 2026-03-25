@@ -2,6 +2,7 @@
 type: concept
 source_type: "books"
 source_slug: "clean-architecture"
+source_title: "Clean Architecture"
 scope: "source-local"
 sources:
   - "clean-architecture"
@@ -12,7 +13,7 @@ tags:
   - source-note
   - concept
 created: 2026-03-24
-updated: 2026-03-24
+updated: 2026-03-25
 source: "chapter-4-excerpt"
 ---
 

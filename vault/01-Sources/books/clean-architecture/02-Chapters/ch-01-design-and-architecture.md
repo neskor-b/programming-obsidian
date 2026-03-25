@@ -2,6 +2,7 @@
 type: chapter
 source_type: "books"
 source_slug: "clean-architecture"
+source_title: "Clean Architecture"
 chapter: "1"
 title: "Що таке дизайн і архітектура"
 aliases:
@@ -10,7 +11,7 @@ tags:
   - source-note
   - chapter
 created: 2026-03-24
-updated: 2026-03-24
+updated: 2026-03-25
 source: "excerpt"
 ---
 

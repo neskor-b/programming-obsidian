@@ -2,6 +2,7 @@
 type: concept
 source_type: "books"
 source_slug: "a-philosophy-of-software-design"
+source_title: "A Philosophy of Software Design"
 scope: "source-local"
 sources:
   - "a-philosophy-of-software-design"
@@ -12,7 +13,7 @@ tags:
   - source-note
   - concept
 created: 2026-03-24
-updated: 2026-03-24
+updated: 2026-03-25
 source: "chapter-1-excerpt"
 ---
 
