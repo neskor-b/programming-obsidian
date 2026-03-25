@@ -22,7 +22,7 @@ Create or update `.md` files that:
 - use `[[wikilinks]]`
 - use block IDs for precise references
 - avoid duplication
-- connect source notes, concept notes, code notes, summaries, and playbooks
+- connect source notes, concept notes, code notes, and playbooks
 - support links between multiple sources through shared concept notes
 - scale to large vaults by using retrieval-first linking instead of scanning everything
 
@@ -54,10 +54,9 @@ Create or update `.md` files that:
    - `02-Notes/` for articles, docs, and courses
    - `03-Concepts/`
    - `04-Code/`
-   - `05-Summaries/`
 9. When an idea becomes cross-source and evergreen, create or update a shared note in `vault/02-Concepts/`.
 10. When the output is procedural, create or update a playbook in `vault/04-Playbooks/`.
-11. Add short summaries, source metadata, links, and block IDs.
+11. Keep a short summary inside the main `chapter` or `note`, add source metadata, links, and block IDs.
 12. Keep file names short, predictable, and lowercase.
 13. Use path-based wikilinks when file names may collide across sources.
 
@@ -75,6 +74,7 @@ The user may explicitly invoke this skill by starting the message with `$obsidia
 - Use block IDs such as `^ca-ch02-rule-01`.
 - When precise linking matters, point to a specific block ID in an existing note.
 - Preserve source provenance: keep source-bound material in the source folder and synthesize shared ideas in `vault/02-Concepts/`.
+- Do not create standalone summary notes by default; keep concise summaries and practical takeaways inside the primary source note.
 
 ## Optimized Linking Rules
 
@@ -108,7 +108,6 @@ Open the matching template before writing:
 - [_templates/chapter-note.md](/Users/bohdanne/Desktop/bohdan/ProgrammingObsidian/_templates/chapter-note.md)
 - [_templates/concept-note.md](/Users/bohdanne/Desktop/bohdan/ProgrammingObsidian/_templates/concept-note.md)
 - [_templates/code-note.md](/Users/bohdanne/Desktop/bohdan/ProgrammingObsidian/_templates/code-note.md)
-- [_templates/summary-note.md](/Users/bohdanne/Desktop/bohdan/ProgrammingObsidian/_templates/summary-note.md)
 - [_templates/playbook-note.md](/Users/bohdanne/Desktop/bohdan/ProgrammingObsidian/_templates/playbook-note.md)
 - [_templates/capture-note.md](/Users/bohdanne/Desktop/bohdan/ProgrammingObsidian/_templates/capture-note.md)
 

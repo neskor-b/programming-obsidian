@@ -7,7 +7,6 @@
 - concepts
 - source notes
 - code notes
-- summaries
 - playbooks
 
 А не:
@@ -45,7 +44,6 @@
 - `note`
 - `concept`
 - `code`
-- `summary`
 - `playbook`
 - `capture`
 
@@ -63,8 +61,6 @@
   Звичайні source-local notes для articles, docs і courses. Яскравий cyan для “робочих” нотаток.
 - `code` — `rgb(99, 102, 241)`  
   Code notes і приклади коду. Насичений indigo для технічних артефактів.
-- `summary` — `rgb(217, 70, 239)`  
-  Summary notes. Виразний magenta, щоб легко відрізняти підсумки від локальних notes.
 - `playbook` — `rgb(234, 88, 12)`  
   Практичні інструкції, checklist і how-to. Активний orange-red для процедурних нотаток.
 - `capture` — `rgb(100, 116, 139)`  
@@ -88,9 +84,10 @@
 - `note`
 - `concept`
 - `code`
-- `summary`
 - `playbook`
 - `capture`
+
+Стислий підсумок джерела не виділяється в окремий `type`: він живе як секція всередині `chapter` або `note`.
 
 Якщо додається новий `type`, для нього потрібно одночасно:
 

@@ -38,6 +38,13 @@ source: "excerpt"
 - Waterfall погано підходить для великих програмних систем, бо критичні вади дизайну часто видно лише під час реалізації. ^aphsd-ch01-thesis-waterfall
 - Книгу варто читати поруч із code review: red flags у чужому коді допомагають тренувати власне дизайнерське судження. ^aphsd-ch01-thesis-red-flags
 
+## Практичні правила
+
+- Коли чергова зміна стає важкою для пояснення, спершу підозрюйте зайву складність, а не лише нестачу часу. ^aphsd-ch01-rule-complexity-first
+- Якщо складність неможливо прибрати, сховайте її за межею модуля так, щоб інші частини системи працювали з простішою моделлю. ^aphsd-ch01-rule-hide-complexity
+- Плануйте редизайн як нормальну частину розробки, а не як рідкісний "великий рефакторинг". ^aphsd-ch01-rule-redesign-normal
+- Використовуйте code review не лише для пошуку помилок, а й для тренування зору на structural red flags. ^aphsd-ch01-rule-review-red-flags
+
 ## Важливі цитати
 
 > Complexity increases inevitably over the life of any program.
@@ -67,7 +74,6 @@ source: "excerpt"
 
 - [[01-Sources/books/a-philosophy-of-software-design/A Philosophy of Software Design|Нотатка книги]]
 - [[01-Sources/books/a-philosophy-of-software-design/01-Inbox/ch-01-introduction-raw-excerpt|Сирий уривок розділу 1]]
-- [[01-Sources/books/a-philosophy-of-software-design/05-Summaries/ch-01-introduction-summary|Підсумок розділу 1]]
 
 ## Пов'язані нотатки
 

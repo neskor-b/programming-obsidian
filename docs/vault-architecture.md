@@ -73,8 +73,7 @@ vault/01-Sources/books/<slug>/
 ├── 01-Inbox/
 ├── 02-Chapters/
 ├── 03-Concepts/
-├── 04-Code/
-└── 05-Summaries/
+└── 04-Code/
 ```
 
 ### Articles / docs / courses
@@ -85,8 +84,7 @@ vault/01-Sources/<type>/<slug>/
 ├── 01-Inbox/
 ├── 02-Notes/
 ├── 03-Concepts/
-├── 04-Code/
-└── 05-Summaries/
+└── 04-Code/
 ```
 
 ## Правила створення нотаток
@@ -97,6 +95,7 @@ vault/01-Sources/<type>/<slug>/
 4. Якщо ідея є узагальнюваною і корисною поза межами одного джерела, створюється або оновлюється shared concept у `vault/02-Concepts/`.
 5. Якщо результат є практичним способом роботи, checklist або процедурою, створюється або оновлюється playbook у `vault/04-Playbooks/`.
 6. Якщо одна тема вже охоплює багато джерел і десятки нотаток, створюється MOC у `vault/03-Maps/`.
+7. Стислий підсумок джерела або розділу лишається всередині `chapter` чи `note`, а не в окремому `summary`-файлі.
 
 ## Router для Codex
 

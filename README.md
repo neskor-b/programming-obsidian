@@ -99,8 +99,7 @@ vault/01-Sources/books/<slug>/
 ├── 01-Inbox/
 ├── 02-Chapters/
 ├── 03-Concepts/
-├── 04-Code/
-└── 05-Summaries/
+└── 04-Code/
 ```
 
 ### Структура для articles, docs і courses
@@ -111,8 +110,7 @@ vault/01-Sources/<type>/<slug>/
 ├── 01-Inbox/
 ├── 02-Notes/
 ├── 03-Concepts/
-├── 04-Code/
-└── 05-Summaries/
+└── 04-Code/
 ```
 
 ## Куди класти нову нотатку
@@ -123,13 +121,14 @@ vault/01-Sources/<type>/<slug>/
 - `playbook` якщо це процедура, checklist або спосіб роботи
 - `capture` якщо матеріал ще сирий і не розкладений
 
+Стислий підсумок не є окремим типом нотатки: його варто тримати всередині `chapter` або `note`, а практичні висновки або лишати там же, або виносити в `playbook`.
+
 ## Іменування файлів
 
 - `ch-XX-topic.md` для розділів книги або курсу
 - `note-topic.md` для звичайних source notes
 - `concept-topic.md` для концептів
 - `code-topic.md` для кодових прикладів
-- `summary-topic.md` для підсумків
 - `playbook-topic.md` для практичних інструкцій
 - `capture-topic.md` для сирих нотаток
 
@@ -149,7 +148,6 @@ vault/01-Sources/<type>/<slug>/
 - `source-note.md`
 - `concept-note.md`
 - `code-note.md`
-- `summary-note.md`
 - `playbook-note.md`
 - `capture-note.md`
 
