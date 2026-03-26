@@ -13,7 +13,7 @@ tags:
   - source-note
   - index
 created: 2026-03-24
-updated: 2026-03-25
+updated: 2026-03-26
 ---
 
 # Clean Architecture
@@ -37,6 +37,7 @@ updated: 2026-03-25
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-03-paradigm-overview|Розділ 3. Огляд парадигм]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-04-structured-programming|Розділ 4. Структурне програмування]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-05-object-oriented-programming|Розділ 5. Об'єктно-орієнтоване програмування]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-06-functional-programming|Розділ 6. Функціональне програмування]]
 
 ## Локальні концепти
 
@@ -47,6 +48,14 @@ updated: 2026-03-25
 - [[01-Sources/books/clean-architecture/03-Concepts/paradigms-impose-discipline|Парадигми вводять дисципліну через обмеження]]
 - [[01-Sources/books/clean-architecture/03-Concepts/functional-decomposition-needs-structured-programming|Функціональна декомпозиція потребує структурного програмування]]
 - [[01-Sources/books/clean-architecture/03-Concepts/oo-controls-dependency-direction-through-polymorphism|ООП дає контроль над напрямком залежностей через поліморфізм]]
+- [[01-Sources/books/clean-architecture/03-Concepts/immutability-removes-classes-of-concurrency-problems|Незмінність прибирає цілі класи проблем конкурентності]]
+- [[01-Sources/books/clean-architecture/03-Concepts/segregation-of-mutability-localizes-concurrency-risk|Сегрегація змінності локалізує ризики конкурентності]]
+- [[01-Sources/books/clean-architecture/03-Concepts/event-sourcing-stores-transactions-not-state|Event sourcing зберігає транзакції, а не стан]]
+
+## Приклади коду
+
+- [[01-Sources/books/clean-architecture/04-Code/c-function-pointers-enable-polymorphism|Вказівники на функції в C як основа поліморфізму]]
+- [[01-Sources/books/clean-architecture/04-Code/clojure-atom-controls-mutation-with-swap|Clojure atom дисциплінує мутацію через swap!]]
 
 ## Міжджерельні концепти з цієї книги
 
