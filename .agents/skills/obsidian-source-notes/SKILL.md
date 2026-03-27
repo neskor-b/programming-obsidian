@@ -62,13 +62,13 @@ Supported source types:
 
 Open the matching template before writing:
 
-- [_templates/source-note.md](/Users/bohdanne/Desktop/bohdan/ProgrammingObsidian/_templates/source-note.md)
-- [_templates/chapter-note.md](/Users/bohdanne/Desktop/bohdan/ProgrammingObsidian/_templates/chapter-note.md)
-- [_templates/concept-note.md](/Users/bohdanne/Desktop/bohdan/ProgrammingObsidian/_templates/concept-note.md)
-- [_templates/code-note.md](/Users/bohdanne/Desktop/bohdan/ProgrammingObsidian/_templates/code-note.md)
-- [_templates/playbook-note.md](/Users/bohdanne/Desktop/bohdan/ProgrammingObsidian/_templates/playbook-note.md)
-- [_templates/capture-note.md](/Users/bohdanne/Desktop/bohdan/ProgrammingObsidian/_templates/capture-note.md)
+- [_templates/source-note.md](_templates/source-note.md)
+- [_templates/chapter-note.md](_templates/chapter-note.md)
+- [_templates/concept-note.md](_templates/concept-note.md)
+- [_templates/code-note.md](_templates/code-note.md)
+- [_templates/playbook-note.md](_templates/playbook-note.md)
+- [_templates/capture-note.md](_templates/capture-note.md)
 
 ## Optional Prompt
 
-- [_prompts/obsidian-session-prompt.md](/Users/bohdanne/Desktop/bohdan/ProgrammingObsidian/_prompts/obsidian-session-prompt.md)
+- [_prompts/obsidian-session-prompt.md](_prompts/obsidian-session-prompt.md)
