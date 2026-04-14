@@ -13,7 +13,7 @@ tags:
   - source-note
   - index
 created: 2026-03-24
-updated: 2026-03-26
+updated: 2026-04-14
 ---
 
 # Clean Architecture
@@ -38,6 +38,7 @@ updated: 2026-03-26
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-04-structured-programming|Розділ 4. Структурне програмування]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-05-object-oriented-programming|Розділ 5. Об'єктно-орієнтоване програмування]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-06-functional-programming|Розділ 6. Функціональне програмування]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-p3-design-principles|Частина III. Принципи дизайну]]
 
 ## Локальні концепти
 
@@ -62,6 +63,7 @@ updated: 2026-03-26
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
 - [[02-Concepts/tests-falsify-not-prove-correctness|Тести спростовують помилки, а не доводять коректність]]
 - [[02-Concepts/dependency-inversion|Інверсія залежностей]]
+- [[02-Concepts/solid-organizes-modules-for-change|SOLID організовує модулі для змінюваності]]
 - [[02-Concepts/plugin-architecture-via-polymorphism|Поліморфізм дозволяє будувати plugin architecture]]
 
 ## Робочі папки

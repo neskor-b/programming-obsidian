@@ -1,0 +1,66 @@
+---
+type: chapter
+source_type: books
+source_slug: clean-architecture
+source_title: Clean Architecture
+chapter: Part III
+title: Принципи дизайну (SOLID)
+aliases:
+  - Design Principles
+  - SOLID overview
+tags:
+  - source-note
+  - chapter
+created: 2026-04-14
+updated: 2026-04-14
+source: excerpt
+---
+
+# Принципи дизайну (SOLID)
+
+## Контекст
+
+- Джерело: [[01-Sources/books/clean-architecture/Clean Architecture (Robert C. Martin)|Clean Architecture]]
+- Частина книги: III
+- Тип джерела: уривок
+
+## Головна ідея
+
+Цей вступ до частини про `SOLID` ставить між clean code і high-level architecture проміжний рівень дизайну: модулі, класи й інші групування функцій та даних. Мартін підкреслює, що якість окремих "цеглин" ще не гарантує доброї системи; потрібні принципи, які допомагають збирати ці елементи в структури, що витримують зміни, залишаються зрозумілими та можуть ставати основою для повторно використовуваних компонентів.
+
+^clean-architecture-p3-main-idea
+
+## Ключові тези
+
+- `SOLID` стосується не лише класичного `object-oriented` коду: будь-яка система має групування функцій і даних, а отже має і проблему того, як ці групування пов'язувати між собою. ^clean-architecture-p3-thesis-groupings
+- Мета принципів полягає у створенні `mid-level software structures`, які толерують зміни, легко читаються й стають хорошою основою для компонентів. ^clean-architecture-p3-thesis-mid-level
+- `Mid-level` означає рівень між окремими рядками коду та високорівневою архітектурою: саме тут програміст вирішує, які модулі існують, за що вони відповідають і як залежать один від одного. ^clean-architecture-p3-thesis-module-level
+- Добре спроєктовані модулі самі по собі ще не гарантують гарної системи, тому після `SOLID` розмова природно переходить до принципів компонентів і далі до high-level architecture. ^clean-architecture-p3-thesis-ladder
+- Огляд `SOLID` у цьому уривку формулює п'ять окремих напрямів дисципліни: одна причина для зміни (`SRP`), розширення через додавання коду (`OCP`), взаємозамінність частин через контракт (`LSP`), залежність лише від потрібних інтерфейсів (`ISP`) і підпорядкування деталей політикам (`DIP`). ^clean-architecture-p3-thesis-five-principles
+- Історично набір принципів складався поступово від дискусій наприкінці 1980-х до стабілізації на початку 2000-х, а акронім `SOLID` закріпився після пропозиції Майкла Фезерса. ^clean-architecture-p3-thesis-history
+
+## Важливі цитати
+
+> The SOLID principles apply to those groupings.
+
+^clean-architecture-p3-quote-groupings
+
+> Details should depend on policies.
+
+^clean-architecture-p3-quote-dip
+
+## Пов'язані концепти
+
+- [[02-Concepts/solid-organizes-modules-for-change|SOLID організовує модулі для змінюваності]]
+- [[01-Sources/books/clean-architecture/03-Concepts/design-architecture-continuum|Єдність дизайну й архітектури]]
+- [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
+- [[02-Concepts/dependency-inversion|Інверсія залежностей]]
+
+## Пов'язані приклади коду
+
+- Конкретні code notes для цього вступного уривка ще не додані.
+
+## Джерело та продовження
+
+- [[01-Sources/books/clean-architecture/Clean Architecture (Robert C. Martin)|Нотатка книги]]
+- Наступні розділи цієї частини деталізують `SRP`, `OCP`, `LSP`, `ISP` і `DIP`.
