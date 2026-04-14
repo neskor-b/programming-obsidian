@@ -90,6 +90,34 @@ flowchart BT
 - Якщо lower-level компонент прямо імпортує або "просвічує" внутрішності higher-level компонента, це руйнує не лише `DIP`, а й архітектурний сенс `OCP`.
 - Інтерфейси створюй там, де вони реально захищають policy або приховують внутрішню будову, а не як формальність.
 
+## Мінімальний приклад
+
+```java
+public interface FinancialReportPresenter {
+    void present(ReportData data);
+}
+
+public final class FinancialReportInteractor {
+    private final FinancialReportPresenter presenter;
+
+    public FinancialReportInteractor(FinancialReportPresenter presenter) {
+        this.presenter = presenter;
+    }
+
+    public void generate(ReportData data) {
+        presenter.present(data);
+    }
+}
+
+public final class PrintReportPresenter implements FinancialReportPresenter {
+    public void present(ReportData data) {
+        renderPdf(data);
+    }
+}
+```
+
+`Interactor` не змінюється, коли ми додаємо новий формат виводу. Розширення відбувається через новий presenter, тобто за межами high-level policy. Це і є найкоротше читання `OCP` у стилі цього розділу. ^clean-architecture-ch08-minimal-code-example
+
 ## Важливі цитати
 
 > A software artifact should be open for extension but closed for modification.
@@ -109,7 +137,8 @@ flowchart BT
 
 ## Пов'язані приклади коду
 
-- Конкретні code notes для цього уривка ще не додані.
+- [[01-Sources/books/clean-architecture/04-Code/ocp-adds-print-presenter-without-changing-interactor|OCP додає print presenter без зміни interactor]]
+- [[01-Sources/books/clean-architecture/04-Code/dip-interactor-depends-on-gateway-contract|Interactor залежить від gateway-контракту, а не від Postgres]]
 
 ## Джерело та продовження
 

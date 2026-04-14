@@ -77,6 +77,34 @@ flowchart LR
 
 Якщо завтра сховище зміниться, ми замінимо адаптер. Якщо зміниться бізнес-правило побудови звіту, ми редагуватимемо interactor. Це і є розділення політики та деталей через `DIP`.
 
+## Мінімальний приклад коду
+
+```java
+public interface FinancialDataGateway {
+    ReportData fetchReportData();
+}
+
+public final class FinancialReportInteractor {
+    private final FinancialDataGateway gateway;
+
+    public FinancialReportInteractor(FinancialDataGateway gateway) {
+        this.gateway = gateway;
+    }
+
+    public ReportData buildReport() {
+        return gateway.fetchReportData();
+    }
+}
+
+public final class PostgresFinancialDataGateway implements FinancialDataGateway {
+    public ReportData fetchReportData() {
+        return loadFromPostgres();
+    }
+}
+```
+
+`FinancialReportInteractor` залежить лише від `FinancialDataGateway`, а конкретний `Postgres`-адаптер залежить від цього контракту й реалізує його. Потік виклику під час runtime йде до бази даних, але вихідна кодова залежність high-level policy спрямована в бік абстракції. ^dependency-inversion-minimal-code-example
+
 ## Ознаки в коді
 
 - Інтерфейс або абстракція живе поруч із high-level policy, а concrete implementation імпортує цей контракт, а не навпаки.
@@ -116,4 +144,5 @@ flowchart LR
 
 ## Пов'язаний код
 
+- [[01-Sources/books/clean-architecture/04-Code/dip-interactor-depends-on-gateway-contract|Interactor залежить від gateway-контракту, а не від Postgres]]
 - [[01-Sources/books/clean-architecture/04-Code/c-function-pointers-enable-polymorphism|Вказівники на функції в C як основа поліморфізму]]
