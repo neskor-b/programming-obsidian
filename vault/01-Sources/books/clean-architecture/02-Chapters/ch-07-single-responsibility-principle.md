@@ -74,7 +74,7 @@ source: "excerpt"
 
 ## Пов'язані приклади коду
 
-- Конкретні code notes для цього уривка ще не додані.
+- [[01-Sources/books/clean-architecture/04-Code/srp-splits-employee-by-actor|SRP розділяє Employee за акторами]]
 
 ## Джерело та продовження
 

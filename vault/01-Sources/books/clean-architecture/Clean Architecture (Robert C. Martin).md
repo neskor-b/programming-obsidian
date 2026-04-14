@@ -58,6 +58,7 @@ updated: 2026-04-14
 
 - [[01-Sources/books/clean-architecture/04-Code/c-function-pointers-enable-polymorphism|Вказівники на функції в C як основа поліморфізму]]
 - [[01-Sources/books/clean-architecture/04-Code/clojure-atom-controls-mutation-with-swap|Clojure atom дисциплінує мутацію через swap!]]
+- [[01-Sources/books/clean-architecture/04-Code/srp-splits-employee-by-actor|SRP розділяє Employee за акторами]]
 
 ## Міжджерельні концепти з цієї книги
 

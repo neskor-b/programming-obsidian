@@ -49,4 +49,4 @@ source: "synthesis"
 
 ## Пов'язаний код
 
-- Конкретні code notes для цього спільного концепту ще не додані.
+- [[01-Sources/books/clean-architecture/04-Code/srp-splits-employee-by-actor|SRP розділяє Employee за акторами]]
