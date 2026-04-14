@@ -6,190 +6,8 @@
   "debug": false,
   "globalStyleGroups": [
     {
-      "filter": "source_slug:clean-architecture type:index",
-      "color": "rgb(146, 64, 14)",
-      "shape": "ellipse",
-      "icon": {
-        "name": "No icon",
-        "path": "",
-        "color": "white"
-      },
-      "showInPane": true,
-      "show": true,
-      "size": 1
-    },
-    {
-      "filter": "source_slug:clean-architecture type:chapter",
-      "color": "rgb(217, 119, 6)",
-      "shape": "ellipse",
-      "icon": {
-        "name": "No icon",
-        "path": "",
-        "color": "white"
-      },
-      "showInPane": true,
-      "show": true,
-      "size": 1
-    },
-    {
-      "filter": "source_slug:clean-architecture type:note",
-      "color": "rgb(217, 119, 6)",
-      "shape": "ellipse",
-      "icon": {
-        "name": "No icon",
-        "path": "",
-        "color": "white"
-      },
-      "showInPane": true,
-      "show": true,
-      "size": 1
-    },
-    {
-      "filter": "source_slug:clean-architecture type:concept",
-      "color": "rgb(245, 158, 11)",
-      "shape": "ellipse",
-      "icon": {
-        "name": "No icon",
-        "path": "",
-        "color": "white"
-      },
-      "showInPane": true,
-      "show": true,
-      "size": 1
-    },
-    {
-      "filter": "source_slug:clean-architecture type:code",
-      "color": "rgb(180, 83, 9)",
-      "shape": "ellipse",
-      "icon": {
-        "name": "No icon",
-        "path": "",
-        "color": "white"
-      },
-      "showInPane": true,
-      "show": true,
-      "size": 1
-    },
-    {
-      "filter": "source_slug:clean-architecture type:summary",
-      "color": "rgb(252, 211, 77)",
-      "shape": "ellipse",
-      "icon": {
-        "name": "No icon",
-        "path": "",
-        "color": "white"
-      },
-      "showInPane": true,
-      "show": true,
-      "size": 1
-    },
-    {
-      "filter": "source_slug:clean-architecture type:capture",
-      "color": "rgb(202, 138, 4)",
-      "shape": "ellipse",
-      "icon": {
-        "name": "No icon",
-        "path": "",
-        "color": "white"
-      },
-      "showInPane": true,
-      "show": true,
-      "size": 1
-    },
-    {
-      "filter": "source_slug:a-philosophy-of-software-design type:index",
-      "color": "rgb(124, 45, 18)",
-      "shape": "ellipse",
-      "icon": {
-        "name": "No icon",
-        "path": "",
-        "color": "white"
-      },
-      "showInPane": true,
-      "show": true,
-      "size": 1
-    },
-    {
-      "filter": "source_slug:a-philosophy-of-software-design type:chapter",
-      "color": "rgb(194, 65, 12)",
-      "shape": "ellipse",
-      "icon": {
-        "name": "No icon",
-        "path": "",
-        "color": "white"
-      },
-      "showInPane": true,
-      "show": true,
-      "size": 1
-    },
-    {
-      "filter": "source_slug:a-philosophy-of-software-design type:note",
-      "color": "rgb(194, 65, 12)",
-      "shape": "ellipse",
-      "icon": {
-        "name": "No icon",
-        "path": "",
-        "color": "white"
-      },
-      "showInPane": true,
-      "show": true,
-      "size": 1
-    },
-    {
-      "filter": "source_slug:a-philosophy-of-software-design type:concept",
-      "color": "rgb(234, 88, 12)",
-      "shape": "ellipse",
-      "icon": {
-        "name": "No icon",
-        "path": "",
-        "color": "white"
-      },
-      "showInPane": true,
-      "show": true,
-      "size": 1
-    },
-    {
-      "filter": "source_slug:a-philosophy-of-software-design type:code",
-      "color": "rgb(154, 52, 18)",
-      "shape": "ellipse",
-      "icon": {
-        "name": "No icon",
-        "path": "",
-        "color": "white"
-      },
-      "showInPane": true,
-      "show": true,
-      "size": 1
-    },
-    {
-      "filter": "source_slug:a-philosophy-of-software-design type:summary",
-      "color": "rgb(251, 146, 60)",
-      "shape": "ellipse",
-      "icon": {
-        "name": "No icon",
-        "path": "",
-        "color": "white"
-      },
-      "showInPane": true,
-      "show": true,
-      "size": 1
-    },
-    {
-      "filter": "source_slug:a-philosophy-of-software-design type:capture",
-      "color": "rgb(215, 104, 40)",
-      "shape": "ellipse",
-      "icon": {
-        "name": "No icon",
-        "path": "",
-        "color": "white"
-      },
-      "showInPane": true,
-      "show": true,
-      "size": 1
-    },
-    {
       "filter": "source_type:books type:index",
-      "color": "rgb(120, 53, 15)",
+      "color": "rgb(230, 57, 70)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -202,7 +20,7 @@
     },
     {
       "filter": "source_type:books type:chapter",
-      "color": "rgb(180, 83, 9)",
+      "color": "rgb(251, 133, 0)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -215,7 +33,7 @@
     },
     {
       "filter": "source_type:books type:note",
-      "color": "rgb(180, 83, 9)",
+      "color": "rgb(255, 183, 3)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -228,7 +46,7 @@
     },
     {
       "filter": "source_type:books type:concept",
-      "color": "rgb(217, 119, 6)",
+      "color": "rgb(138, 201, 38)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -241,7 +59,7 @@
     },
     {
       "filter": "source_type:books type:code",
-      "color": "rgb(146, 64, 14)",
+      "color": "rgb(42, 157, 143)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -254,7 +72,7 @@
     },
     {
       "filter": "source_type:books type:summary",
-      "color": "rgb(251, 191, 36)",
+      "color": "rgb(61, 90, 254)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -267,7 +85,7 @@
     },
     {
       "filter": "source_type:books type:capture",
-      "color": "rgb(202, 138, 4)",
+      "color": "rgb(131, 56, 236)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -280,7 +98,7 @@
     },
     {
       "filter": "source_type:articles type:index",
-      "color": "rgb(17, 94, 89)",
+      "color": "rgb(255, 0, 110)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -293,7 +111,7 @@
     },
     {
       "filter": "source_type:articles type:chapter",
-      "color": "rgb(13, 148, 136)",
+      "color": "rgb(255, 84, 0)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -306,7 +124,7 @@
     },
     {
       "filter": "source_type:articles type:note",
-      "color": "rgb(13, 148, 136)",
+      "color": "rgb(255, 214, 10)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -319,7 +137,7 @@
     },
     {
       "filter": "source_type:articles type:concept",
-      "color": "rgb(20, 184, 166)",
+      "color": "rgb(0, 200, 83)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -332,7 +150,7 @@
     },
     {
       "filter": "source_type:articles type:code",
-      "color": "rgb(15, 118, 110)",
+      "color": "rgb(0, 180, 216)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -345,7 +163,7 @@
     },
     {
       "filter": "source_type:articles type:summary",
-      "color": "rgb(94, 234, 212)",
+      "color": "rgb(58, 12, 163)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -358,7 +176,7 @@
     },
     {
       "filter": "source_type:articles type:capture",
-      "color": "rgb(45, 212, 191)",
+      "color": "rgb(214, 40, 118)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -371,7 +189,7 @@
     },
     {
       "filter": "source_type:docs type:index",
-      "color": "rgb(30, 64, 175)",
+      "color": "rgb(2, 62, 138)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -384,7 +202,7 @@
     },
     {
       "filter": "source_type:docs type:chapter",
-      "color": "rgb(37, 99, 235)",
+      "color": "rgb(0, 119, 182)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -397,7 +215,7 @@
     },
     {
       "filter": "source_type:docs type:note",
-      "color": "rgb(37, 99, 235)",
+      "color": "rgb(72, 202, 228)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -410,7 +228,7 @@
     },
     {
       "filter": "source_type:docs type:concept",
-      "color": "rgb(59, 130, 246)",
+      "color": "rgb(114, 9, 183)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -423,7 +241,7 @@
     },
     {
       "filter": "source_type:docs type:code",
-      "color": "rgb(29, 78, 216)",
+      "color": "rgb(67, 97, 238)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -436,7 +254,7 @@
     },
     {
       "filter": "source_type:docs type:summary",
-      "color": "rgb(96, 165, 250)",
+      "color": "rgb(76, 201, 240)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -449,7 +267,7 @@
     },
     {
       "filter": "source_type:docs type:capture",
-      "color": "rgb(14, 165, 233)",
+      "color": "rgb(72, 149, 239)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -462,7 +280,7 @@
     },
     {
       "filter": "source_type:courses type:index",
-      "color": "rgb(76, 29, 149)",
+      "color": "rgb(109, 40, 217)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -475,7 +293,7 @@
     },
     {
       "filter": "source_type:courses type:chapter",
-      "color": "rgb(91, 33, 182)",
+      "color": "rgb(167, 85, 247)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -488,7 +306,7 @@
     },
     {
       "filter": "source_type:courses type:note",
-      "color": "rgb(91, 33, 182)",
+      "color": "rgb(236, 72, 153)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -501,7 +319,7 @@
     },
     {
       "filter": "source_type:courses type:concept",
-      "color": "rgb(124, 58, 237)",
+      "color": "rgb(190, 24, 93)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -514,7 +332,7 @@
     },
     {
       "filter": "source_type:courses type:code",
-      "color": "rgb(67, 56, 202)",
+      "color": "rgb(244, 63, 94)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -527,7 +345,7 @@
     },
     {
       "filter": "source_type:courses type:summary",
-      "color": "rgb(167, 139, 250)",
+      "color": "rgb(217, 70, 239)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -540,7 +358,7 @@
     },
     {
       "filter": "source_type:courses type:capture",
-      "color": "rgb(139, 92, 246)",
+      "color": "rgb(249, 115, 22)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -553,7 +371,7 @@
     },
     {
       "filter": "scope:shared-concepts",
-      "color": "rgb(100, 116, 139)",
+      "color": "rgb(87, 83, 78)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -566,7 +384,7 @@
     },
     {
       "filter": "scope:shared-evergreen",
-      "color": "rgb(148, 163, 184)",
+      "color": "rgb(120, 113, 108)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -579,7 +397,7 @@
     },
     {
       "filter": "scope:topic-maps",
-      "color": "rgb(168, 162, 158)",
+      "color": "rgb(8, 145, 178)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -592,7 +410,7 @@
     },
     {
       "filter": "scope:playbook",
-      "color": "rgb(176, 137, 104)",
+      "color": "rgb(20, 184, 166)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -605,7 +423,7 @@
     },
     {
       "filter": "scope:playbooks",
-      "color": "rgb(176, 137, 104)",
+      "color": "rgb(20, 184, 166)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -618,7 +436,7 @@
     },
     {
       "filter": "type:playbook",
-      "color": "rgb(176, 137, 104)",
+      "color": "rgb(20, 184, 166)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -631,7 +449,7 @@
     },
     {
       "filter": "scope:inbox",
-      "color": "rgb(156, 163, 175)",
+      "color": "rgb(100, 116, 139)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -644,7 +462,7 @@
     },
     {
       "filter": "scope:sources",
-      "color": "rgb(107, 114, 128)",
+      "color": "rgb(55, 65, 81)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -657,7 +475,7 @@
     },
     {
       "filter": "scope:source-type-index",
-      "color": "rgb(148, 163, 184)",
+      "color": "rgb(15, 23, 42)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
@@ -670,7 +488,7 @@
     },
     {
       "filter": "type:home",
-      "color": "rgb(120, 113, 108)",
+      "color": "rgb(17, 138, 178)",
       "shape": "ellipse",
       "icon": {
         "name": "No icon",
