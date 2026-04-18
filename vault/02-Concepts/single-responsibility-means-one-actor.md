@@ -11,7 +11,7 @@ tags:
   - source-note
   - concept
 created: 2026-04-14
-updated: 2026-04-14
+updated: 2026-04-18
 source: "synthesis"
 ---
 
@@ -47,6 +47,6 @@ source: "synthesis"
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
 - [[01-Sources/books/clean-architecture/03-Concepts/design-architecture-continuum|Єдність дизайну й архітектури]]
 
-## Пов'язаний код
+## Пов'язаний фрагмент
 
-- [[01-Sources/books/clean-architecture/04-Code/srp-splits-employee-by-actor|SRP розділяє Employee за акторами]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-07-single-responsibility-principle#^clean-architecture-ch07-code-employee-split|SRP розділяє Employee за акторами]]

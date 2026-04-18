@@ -58,14 +58,6 @@ updated: 2026-04-18
 - [[01-Sources/books/clean-architecture/03-Concepts/segregation-of-mutability-localizes-concurrency-risk|Сегрегація змінності локалізує ризики конкурентності]]
 - [[01-Sources/books/clean-architecture/03-Concepts/event-sourcing-stores-transactions-not-state|Event sourcing зберігає транзакції, а не стан]]
 
-## Приклади коду
-
-- [[01-Sources/books/clean-architecture/04-Code/c-function-pointers-enable-polymorphism|Вказівники на функції в C як основа поліморфізму]]
-- [[01-Sources/books/clean-architecture/04-Code/clojure-atom-controls-mutation-with-swap|Clojure atom дисциплінує мутацію через swap!]]
-- [[01-Sources/books/clean-architecture/04-Code/srp-splits-employee-by-actor|SRP розділяє Employee за акторами]]
-- [[01-Sources/books/clean-architecture/04-Code/ocp-adds-print-presenter-without-changing-interactor|OCP додає print presenter без зміни interactor]]
-- [[01-Sources/books/clean-architecture/04-Code/dip-interactor-depends-on-gateway-contract|Interactor залежить від gateway-контракту, а не від Postgres]]
-
 ## Міжджерельні концепти з цієї книги
 
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
@@ -83,9 +75,8 @@ updated: 2026-04-18
 - `01-Inbox/` для сирих уривків
 - `02-Chapters/` для нотаток розділів
 - `03-Concepts/` для локальних концептів книги
-- `04-Code/` для прикладів коду
 
-Короткий підсумок розділу та практичні правила варто тримати всередині відповідної нотатки розділу.
+Короткий підсумок розділу, практичні правила й приклади коду варто тримати всередині відповідної chapter-note або concept note.
 
 ## Міжджерельні зв'язки
 

@@ -11,7 +11,7 @@ tags:
   - source-note
   - chapter
 created: 2026-03-26
-updated: 2026-03-26
+updated: 2026-04-18
 source: "excerpt"
 ---
 
@@ -39,6 +39,21 @@ source: "excerpt"
 - `Event sourcing` зсуває систему ще далі в бік незмінності: ми зберігаємо не поточний стан, а історію транзакцій або подій, а стан за потреби відновлюємо через replay чи snapshot. ^clean-architecture-ch06-thesis-event-sourcing
 - Якщо сховище є append-only, а `update` і `delete` не виконуються, то система перестає бути класичною `CRUD`-моделлю й уникає частини проблем конкурентного оновлення на рівні даних. ^clean-architecture-ch06-thesis-cr-not-crud
 
+## Приклад коду
+
+### Clojure atom дисциплінує мутацію через `swap!`
+
+```clojure
+(def counter (atom 0)) ; initialize counter to 0
+(swap! counter inc)    ; safely increment counter.
+```
+
+^clean-architecture-ch06-code-atom
+
+Цей фрагмент показує, як функціональна система може дозволяти мутацію лише в дуже дисциплінованій формі. `atom` огортає змінний стан, а `swap!` не записує значення напряму, а приймає функцію, яка обчислює новий стан з поточного. Під капотом це реалізується через `compare-and-swap`: якщо хтось змінив значення паралельно, операція повторюється. Так мутація лишається локальною, явною й захищеною.
+
+Такий механізм добре працює для простих незалежних значень, але не гарантує коректну координацію кількох взаємозалежних змінних. Якщо бізнес-інваріанти розкидані між кількома mutable-осередками, одного `atom` або `swap!` може бути замало, і знадобиться сильніша транзакційна модель.
+
 ## Важливі цитати
 
 > Variables in functional languages do not vary.
@@ -55,10 +70,6 @@ source: "excerpt"
 - [[01-Sources/books/clean-architecture/03-Concepts/segregation-of-mutability-localizes-concurrency-risk|Сегрегація змінності локалізує ризики конкурентності]]
 - [[01-Sources/books/clean-architecture/03-Concepts/event-sourcing-stores-transactions-not-state|Event sourcing зберігає транзакції, а не стан]]
 - [[01-Sources/books/clean-architecture/03-Concepts/paradigms-impose-discipline|Парадигми вводять дисципліну через обмеження]]
-
-## Пов'язані приклади коду
-
-- [[01-Sources/books/clean-architecture/04-Code/clojure-atom-controls-mutation-with-swap|Clojure atom дисциплінує мутацію через swap!]]
 
 ## Джерело та продовження
 

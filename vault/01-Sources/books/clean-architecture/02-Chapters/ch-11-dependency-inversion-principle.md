@@ -141,9 +141,70 @@ public final class Application {
 - [[02-Concepts/plugin-architecture-via-polymorphism|Поліморфізм дозволяє будувати plugin architecture]]
 - [[01-Sources/books/clean-architecture/03-Concepts/oo-controls-dependency-direction-through-polymorphism|ООП дає контроль над напрямком залежностей через поліморфізм]]
 
-## Пов'язані приклади коду
+## Додатковий приклад: порт, адаптер і test fake
 
-- [[01-Sources/books/clean-architecture/04-Code/dip-interactor-depends-on-gateway-contract|Interactor залежить від gateway-контракту, а не від Postgres]]
+### Фрагмент 1: policy говорить через порт
+
+```java
+public interface FinancialDataGateway {
+    ReportData fetchReportData();
+}
+
+public final class FinancialReportInteractor {
+    private final FinancialDataGateway gateway;
+
+    public FinancialReportInteractor(FinancialDataGateway gateway) {
+        this.gateway = gateway;
+    }
+
+    public ReportData buildReport() {
+        return gateway.fetchReportData();
+    }
+}
+```
+
+^clean-architecture-dip-code-policy-port
+
+### Фрагмент 2: detail підлаштовується під контракт
+
+```java
+public final class PostgresFinancialDataGateway implements FinancialDataGateway {
+    private final SqlClient sql;
+
+    public PostgresFinancialDataGateway(SqlClient sql) {
+        this.sql = sql;
+    }
+
+    public ReportData fetchReportData() {
+        Row row = sql.querySingle("select title, revenue from reports limit 1");
+        return new ReportData(row.getString("title"), row.getMoney("revenue"));
+    }
+}
+```
+
+^clean-architecture-dip-code-detail-adapter
+
+### Фрагмент 3: тестовий fake без бази даних
+
+```java
+public final class InMemoryFinancialDataGateway implements FinancialDataGateway {
+    private final ReportData reportData;
+
+    public InMemoryFinancialDataGateway(ReportData reportData) {
+        this.reportData = reportData;
+    }
+
+    public ReportData fetchReportData() {
+        return reportData;
+    }
+}
+```
+
+^clean-architecture-dip-code-test-fake
+
+`FinancialReportInteractor` імпортує не `SqlClient` і не `PostgresFinancialDataGateway`, а лише `FinancialDataGateway`. Саме це і є `DIP`: high-level policy формулює потрібний контракт, а low-level detail підлаштовується під нього.
+
+Третій фрагмент спеціально показує `fake`. Якщо заміна адаптера не потребує змін у use case, залежності спрямовані правильно. База даних у такій архітектурі стає змінною деталлю, а не центром дизайну.
 
 ## Джерело та продовження
 
@@ -154,4 +215,4 @@ public final class Application {
 ## Пов'язані нотатки
 
 - [[02-Concepts/dependency-inversion#^dependency-inversion-definition|Спільний концепт про інверсію залежностей]]
-- [[01-Sources/books/clean-architecture/04-Code/dip-interactor-depends-on-gateway-contract#^clean-architecture-dip-code-policy-port|Code note з портом і адаптером]]
+- [[#^clean-architecture-dip-code-policy-port|Фрагмент із портом і адаптером у цій нотатці]]

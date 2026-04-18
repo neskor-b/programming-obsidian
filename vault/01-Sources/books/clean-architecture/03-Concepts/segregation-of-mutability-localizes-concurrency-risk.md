@@ -14,7 +14,7 @@ tags:
   - source-note
   - concept
 created: 2026-03-26
-updated: 2026-03-26
+updated: 2026-04-18
 source: "chapter-6-excerpt"
 ---
 
@@ -49,6 +49,6 @@ source: "chapter-6-excerpt"
 - [[01-Sources/books/clean-architecture/03-Concepts/immutability-removes-classes-of-concurrency-problems|Незмінність прибирає цілі класи проблем конкурентності]]
 - [[01-Sources/books/clean-architecture/03-Concepts/event-sourcing-stores-transactions-not-state|Event sourcing зберігає транзакції, а не стан]]
 
-## Пов'язаний код
+## Пов'язаний фрагмент
 
-- [[01-Sources/books/clean-architecture/04-Code/clojure-atom-controls-mutation-with-swap|Clojure atom дисциплінує мутацію через swap!]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-06-functional-programming#^clean-architecture-ch06-code-atom|Clojure atom дисциплінує мутацію через swap!]]

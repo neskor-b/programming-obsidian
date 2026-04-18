@@ -11,7 +11,7 @@ tags:
   - source-note
   - concept
 created: 2026-03-24
-updated: 2026-03-24
+updated: 2026-04-18
 source: "synthesis"
 ---
 
@@ -38,7 +38,7 @@ source: "synthesis"
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-05-object-oriented-programming#^clean-architecture-ch05-thesis-polymorphism-history]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-05-object-oriented-programming#^clean-architecture-ch05-thesis-plugins]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-05-object-oriented-programming#^clean-architecture-ch05-thesis-independent-components]]
-- [[01-Sources/books/clean-architecture/04-Code/c-function-pointers-enable-polymorphism#^clean-architecture-ch05-code-function-pointers]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-05-object-oriented-programming#^clean-architecture-ch05-code-function-pointers]]
 
 ## Пов'язані концепти
 
@@ -46,6 +46,6 @@ source: "synthesis"
 - [[02-Concepts/open-closed-protects-high-level-policy|OCP захищає high-level policy через ієрархію залежностей]]
 - [[01-Sources/books/clean-architecture/03-Concepts/oo-controls-dependency-direction-through-polymorphism|ООП дає контроль над напрямком залежностей через поліморфізм]]
 
-## Пов'язаний код
+## Пов'язаний фрагмент
 
-- [[01-Sources/books/clean-architecture/04-Code/c-function-pointers-enable-polymorphism|Вказівники на функції в C як основа поліморфізму]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-05-object-oriented-programming#^clean-architecture-ch05-code-function-pointers|Вказівники на функції в C як основа поліморфізму]]

@@ -11,7 +11,7 @@ tags:
   - source-note
   - chapter
 created: 2026-03-24
-updated: 2026-03-25
+updated: 2026-04-18
 source: "excerpt"
 ---
 
@@ -40,6 +40,32 @@ source: "excerpt"
 - Поліморфізм дає архітектору контроль над напрямком залежностей у вихідному коді: `source code dependencies` можна розвернути так, щоб `UI` і база даних залежали від бізнес-правил, а не навпаки. ^clean-architecture-ch05-thesis-dependency-inversion
 - Коли деталі залежать від політик, компоненти можна збирати, розгортати й розвивати незалежно; звідси випливають `independent deployability` та `independent developability`. ^clean-architecture-ch05-thesis-independent-components
 
+## Приклад коду
+
+### Вказівники на функції в C як основа поліморфізму
+
+```c
+struct FILE {
+  void (*open)(char* name, int mode);
+  void (*close)();
+  int (*read)();
+  void (*write)(char);
+  void (*seek)(long index, int mode);
+};
+
+extern struct FILE* STDIN;
+
+int getchar() {
+  return STDIN->read();
+}
+```
+
+^clean-architecture-ch05-code-function-pointers
+
+Цей фрагмент показує, що поліморфізм не народився разом із `OO`-мовами. Поведінка `getchar()` змінюється залежно від того, на який `FILE` вказує `STDIN`, а отже виклик проходить через таблицю функціональних вказівників. Ідея така сама, як у `virtual method` та `vtable`: стабільний виклик у коді делегує конкретну поведінку змінній реалізації.
+
+У чистому `C` цей підхід тримається на ручних домовленостях: треба правильно ініціалізувати всі функціональні вказівники й завжди викликати поведінку саме через них. Якщо структура контракту змінюється або один із вказівників лишається неініціалізованим, помилка буде низькорівневою й важкою для локалізації.
+
 ## Важливі цитати
 
 > OO imposes discipline on indirect transfer of control.
@@ -56,10 +82,6 @@ source: "excerpt"
 - [[01-Sources/books/clean-architecture/03-Concepts/paradigms-impose-discipline|Парадигми вводять дисципліну через обмеження]]
 - [[02-Concepts/dependency-inversion|Інверсія залежностей]]
 - [[02-Concepts/plugin-architecture-via-polymorphism|Поліморфізм дозволяє будувати plugin architecture]]
-
-## Пов'язані приклади коду
-
-- [[01-Sources/books/clean-architecture/04-Code/c-function-pointers-enable-polymorphism|Вказівники на функції в C як основа поліморфізму]]
 
 ## Джерело та продовження
 

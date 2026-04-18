@@ -12,7 +12,7 @@ tags:
   - source-note
   - chapter
 created: 2026-04-14
-updated: 2026-04-14
+updated: 2026-04-18
 source: "excerpt"
 ---
 
@@ -118,6 +118,60 @@ public final class PrintReportPresenter implements FinancialReportPresenter {
 
 `Interactor` не змінюється, коли ми додаємо новий формат виводу. Розширення відбувається через новий presenter, тобто за межами high-level policy. Це і є найкоротше читання `OCP` у стилі цього розділу. ^clean-architecture-ch08-minimal-code-example
 
+## Розгорнутий приклад
+
+### Фрагмент 1: стабільна policy
+
+```java
+public record ReportData(String title, BigDecimal revenue) {}
+
+public interface FinancialReportPresenter {
+    void present(ReportData data);
+}
+
+public final class FinancialReportInteractor {
+    private final FinancialDataGateway gateway;
+    private final FinancialReportPresenter presenter;
+
+    public FinancialReportInteractor(
+        FinancialDataGateway gateway,
+        FinancialReportPresenter presenter
+    ) {
+        this.gateway = gateway;
+        this.presenter = presenter;
+    }
+
+    public void generateReport() {
+        ReportData data = gateway.fetchReportData();
+        presenter.present(data);
+    }
+}
+```
+
+^clean-architecture-ch08-code-ocp-stable-policy
+
+### Фрагмент 2: нове розширення
+
+```java
+public final class WebReportPresenter implements FinancialReportPresenter {
+    public void present(ReportData data) {
+        renderHtml(data);
+    }
+}
+
+public final class PrintReportPresenter implements FinancialReportPresenter {
+    public void present(ReportData data) {
+        renderPdf(data);
+    }
+}
+```
+
+^clean-architecture-ch08-code-ocp-new-presenter
+
+`FinancialReportInteractor` знає лише про контракт `FinancialReportPresenter`, тому новий канал виводу додається як новий клас, а не як нова `if/else`-гілка всередині policy. Саме це і показує архітектурний сенс `OCP`: бізнес-ядро лишається стабільним, а поведінка розширюється на периферії.
+
+У цьому прикладі `PrintReportPresenter` не "вламується" в interactor. Він просто підлаштовується під уже наявний контракт. Завдяки цьому додавання `PDF` або друку не змушує редагувати алгоритм побудови звіту.
+
 ## Важливі цитати
 
 > A software artifact should be open for extension but closed for modification.
@@ -134,11 +188,6 @@ public final class PrintReportPresenter implements FinancialReportPresenter {
 - [[02-Concepts/dependency-inversion|Інверсія залежностей]]
 - [[02-Concepts/single-responsibility-means-one-actor|SRP означає одного актора, а не одну дію]]
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
-
-## Пов'язані приклади коду
-
-- [[01-Sources/books/clean-architecture/04-Code/ocp-adds-print-presenter-without-changing-interactor|OCP додає print presenter без зміни interactor]]
-- [[01-Sources/books/clean-architecture/04-Code/dip-interactor-depends-on-gateway-contract|Interactor залежить від gateway-контракту, а не від Postgres]]
 
 ## Джерело та продовження
 

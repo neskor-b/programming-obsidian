@@ -156,7 +156,7 @@ public final class PostgresFinancialDataGateway implements FinancialDataGateway 
 - [[01-Sources/books/clean-architecture/03-Concepts/oo-controls-dependency-direction-through-polymorphism|ООП дає контроль над напрямком залежностей через поліморфізм]]
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
 
-## Пов'язаний код
+## Пов'язані фрагменти
 
-- [[01-Sources/books/clean-architecture/04-Code/dip-interactor-depends-on-gateway-contract|Interactor залежить від gateway-контракту, а не від Postgres]]
-- [[01-Sources/books/clean-architecture/04-Code/c-function-pointers-enable-polymorphism|Вказівники на функції в C як основа поліморфізму]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-11-dependency-inversion-principle#^clean-architecture-dip-code-policy-port|Interactor залежить від gateway-контракту, а не від Postgres]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-05-object-oriented-programming#^clean-architecture-ch05-code-function-pointers|Вказівники на функції в C як основа поліморфізму]]
