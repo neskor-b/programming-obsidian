@@ -100,7 +100,7 @@ source: "synthesis"
 
 Найтиповіший "швидкий" патч виглядає так:
 
-```java
+```java showLineNumbers title="ReportsService.java"
 public final class ReportsService {
     private final PostgresClient postgres;
 
@@ -130,7 +130,7 @@ public final class ReportsService {
 
 Спершу фіксуємо policy: use case має "зібрати дані звіту і відрендерити їх у вибраному форматі". Нижче один цілісний приклад: спочатку контракти, потім concrete-реалізації, а в кінці composition root, де все реально збирається разом.
 
-```java
+```java showLineNumbers
 public record ReportData(String title, BigDecimal revenue) {}
 
 public record RenderedReport(

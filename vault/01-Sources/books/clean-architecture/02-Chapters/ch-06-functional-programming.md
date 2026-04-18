@@ -43,7 +43,7 @@ source: "excerpt"
 
 ### Clojure atom дисциплінує мутацію через `swap!`
 
-```clojure
+```clojure showLineNumbers
 (def counter (atom 0)) ; initialize counter to 0
 (swap! counter inc)    ; safely increment counter.
 ```

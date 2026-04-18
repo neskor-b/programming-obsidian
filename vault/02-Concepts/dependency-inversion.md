@@ -89,7 +89,7 @@ flowchart LR
 
 ## Мінімальний приклад коду
 
-```java
+```java showLineNumbers
 public interface FinancialDataGateway {
     ReportData fetchReportData();
 }

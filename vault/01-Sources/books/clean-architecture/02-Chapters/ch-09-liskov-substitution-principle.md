@@ -105,7 +105,7 @@ flowchart TB
 
 ## Мінімальний приклад
 
-```java
+```java showLineNumbers
 Rectangle r = factory.create();
 r.setW(5);
 r.setH(2);

@@ -99,7 +99,7 @@ flowchart TB
 
 ## Мінімальний приклад
 
-```java
+```java showLineNumbers
 public interface Service {
     void execute();
 }
@@ -145,7 +145,7 @@ public final class Application {
 
 ### Фрагмент 1: policy говорить через порт
 
-```java
+```java showLineNumbers
 public interface FinancialDataGateway {
     ReportData fetchReportData();
 }
@@ -167,7 +167,7 @@ public final class FinancialReportInteractor {
 
 ### Фрагмент 2: detail підлаштовується під контракт
 
-```java
+```java showLineNumbers title="PostgresFinancialDataGateway.java"
 public final class PostgresFinancialDataGateway implements FinancialDataGateway {
     private final SqlClient sql;
 
@@ -186,7 +186,7 @@ public final class PostgresFinancialDataGateway implements FinancialDataGateway 
 
 ### Фрагмент 3: тестовий fake без бази даних
 
-```java
+```java showLineNumbers title="InMemoryFinancialDataGateway.java"
 public final class InMemoryFinancialDataGateway implements FinancialDataGateway {
     private final ReportData reportData;
 

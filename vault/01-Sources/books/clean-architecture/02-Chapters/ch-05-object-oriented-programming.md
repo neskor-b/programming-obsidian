@@ -44,7 +44,7 @@ source: "excerpt"
 
 ### Вказівники на функції в C як основа поліморфізму
 
-```c
+```c showLineNumbers
 struct FILE {
   void (*open)(char* name, int mode);
   void (*close)();

@@ -92,7 +92,7 @@ flowchart BT
 
 ## Мінімальний приклад
 
-```java
+```java showLineNumbers
 public interface FinancialReportPresenter {
     void present(ReportData data);
 }
@@ -122,7 +122,7 @@ public final class PrintReportPresenter implements FinancialReportPresenter {
 
 ### Фрагмент 1: стабільна policy
 
-```java
+```java showLineNumbers
 public record ReportData(String title, BigDecimal revenue) {}
 
 public interface FinancialReportPresenter {
@@ -152,7 +152,7 @@ public final class FinancialReportInteractor {
 
 ### Фрагмент 2: нове розширення
 
-```java
+```java showLineNumbers
 public final class WebReportPresenter implements FinancialReportPresenter {
     public void present(ReportData data) {
         renderHtml(data);

@@ -97,7 +97,7 @@ flowchart LR
 
 ## Мінімальний приклад
 
-```java
+```java showLineNumbers
 public interface U1Ops {
     void op1();
 }

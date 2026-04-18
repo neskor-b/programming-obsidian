@@ -65,7 +65,7 @@ flowchart LR
 
 ## Мінімальний приклад
 
-```java
+```java showLineNumbers
 public interface ReportReader {
     Report load(String id);
 }
