@@ -59,7 +59,7 @@ source: "excerpt"
 
 ### Фрагмент 1: порушення `SRP`
 
-```java showLineNumbers title="Employee.java"
+```java showLineNumbers
 public final class Employee {
     private final EmployeeRecord record;
 
@@ -134,7 +134,7 @@ public final class EmployeeSaver {
 
 ### Фрагмент 3: фасад після розділення
 
-```java showLineNumbers title="EmployeeFacade.java"
+```java showLineNumbers
 public final class EmployeeFacade {
     private final PayCalculator payCalculator;
     private final HourReporter hourReporter;

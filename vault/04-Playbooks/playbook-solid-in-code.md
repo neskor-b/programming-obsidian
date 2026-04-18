@@ -100,7 +100,7 @@ source: "synthesis"
 
 Найтиповіший "швидкий" патч виглядає так:
 
-```java showLineNumbers title="ReportsService.java"
+```java showLineNumbers
 public final class ReportsService {
     private final PostgresClient postgres;
 

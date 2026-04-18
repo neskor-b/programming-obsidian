@@ -1,9 +1,9 @@
 {
   "disabledLanguages": [],
-  "customThemeFolder": "",
+  "customThemeFolder": ".obsidian/shiki-themes",
   "customLanguageFolder": "",
-  "darkTheme": "obsidian-theme",
-  "lightTheme": "obsidian-theme",
+  "darkTheme": "github-dark-default",
+  "lightTheme": "github-dark-dimmed",
   "preferThemeColors": true,
   "inlineHighlighting": true,
   "ecDefaultShowLineNumbers": false,

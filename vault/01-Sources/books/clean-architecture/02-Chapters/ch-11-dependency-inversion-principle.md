@@ -167,7 +167,7 @@ public final class FinancialReportInteractor {
 
 ### Фрагмент 2: detail підлаштовується під контракт
 
-```java showLineNumbers title="PostgresFinancialDataGateway.java"
+```java showLineNumbers
 public final class PostgresFinancialDataGateway implements FinancialDataGateway {
     private final SqlClient sql;
 
@@ -186,7 +186,7 @@ public final class PostgresFinancialDataGateway implements FinancialDataGateway 
 
 ### Фрагмент 3: тестовий fake без бази даних
 
-```java showLineNumbers title="InMemoryFinancialDataGateway.java"
+```java showLineNumbers
 public final class InMemoryFinancialDataGateway implements FinancialDataGateway {
     private final ReportData reportData;
 
