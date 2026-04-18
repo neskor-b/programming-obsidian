@@ -48,6 +48,7 @@ source: "chapter-5-excerpt"
 
 - [[01-Sources/books/clean-architecture/03-Concepts/paradigms-impose-discipline|Парадигми вводять дисципліну через обмеження]]
 - [[02-Concepts/dependency-inversion|Інверсія залежностей]]
+- [[02-Concepts/open-closed-protects-high-level-policy|OCP захищає high-level policy через ієрархію залежностей]]
 - [[02-Concepts/plugin-architecture-via-polymorphism|Поліморфізм дозволяє будувати plugin architecture]]
 
 ## Пов'язаний код

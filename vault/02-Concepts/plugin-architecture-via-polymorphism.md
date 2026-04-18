@@ -43,6 +43,7 @@ source: "synthesis"
 ## Пов'язані концепти
 
 - [[02-Concepts/dependency-inversion|Інверсія залежностей]]
+- [[02-Concepts/open-closed-protects-high-level-policy|OCP захищає high-level policy через ієрархію залежностей]]
 - [[01-Sources/books/clean-architecture/03-Concepts/oo-controls-dependency-direction-through-polymorphism|ООП дає контроль над напрямком залежностей через поліморфізм]]
 
 ## Пов'язаний код

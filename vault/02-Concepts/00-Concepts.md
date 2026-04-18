@@ -17,7 +17,11 @@ updated: 2026-03-25
 
 ## Наявні спільні концепти
 
+- [[02-Concepts/complexity-is-the-central-design-problem|Складність є центральною проблемою дизайну ПЗ]]
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
 - [[02-Concepts/tests-falsify-not-prove-correctness|Тести спростовують помилки, а не доводять коректність]]
 - [[02-Concepts/dependency-inversion|Інверсія залежностей]]
+- [[02-Concepts/single-responsibility-means-one-actor|SRP означає одного актора, а не одну дію]]
+- [[02-Concepts/open-closed-protects-high-level-policy|OCP захищає high-level policy через ієрархію залежностей]]
+- [[02-Concepts/solid-organizes-modules-for-change|SOLID організовує модулі для змінюваності]]
 - [[02-Concepts/plugin-architecture-via-polymorphism|Поліморфізм дозволяє будувати plugin architecture]]

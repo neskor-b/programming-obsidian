@@ -74,7 +74,7 @@ source: "excerpt"
 ## Джерело та продовження
 
 - [[01-Sources/books/a-philosophy-of-software-design/A Philosophy of Software Design|Нотатка книги]]
-- [[01-Sources/books/a-philosophy-of-software-design/01-Inbox/ch-01-introduction-raw-excerpt|Сирий уривок розділу 1]]
+- Сирий уривок розділу 1 ще не збережений окремою нотаткою в `01-Inbox/`
 
 ## Пов'язані нотатки
 

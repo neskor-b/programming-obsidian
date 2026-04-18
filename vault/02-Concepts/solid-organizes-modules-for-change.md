@@ -33,6 +33,14 @@ source: "synthesis"
 - Нові сценарії переважно додаються через нові реалізації, адаптери або розширення контрактів, а не через редагування стабільного ядра в багатьох місцях.
 - Клієнти залежать від вузьких інтерфейсів, а high-level policy не імпортує інфраструктурні деталі напряму.
 
+## Принципи SOLID
+
+- `S` -> [[02-Concepts/single-responsibility-means-one-actor|SRP означає одного актора, а не одну дію]]
+- `O` -> [[02-Concepts/open-closed-protects-high-level-policy|OCP захищає high-level policy через ієрархію залежностей]]
+- `L` -> Нотатка про `LSP` ще не створена
+- `I` -> Нотатка про `ISP` ще не створена
+- `D` -> [[02-Concepts/dependency-inversion|Інверсія залежностей]]
+
 ## Джерела
 
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-p3-design-principles#^clean-architecture-p3-main-idea]]

@@ -63,4 +63,4 @@ source: excerpt
 ## Джерело та продовження
 
 - [[01-Sources/books/clean-architecture/Clean Architecture (Robert C. Martin)|Нотатка книги]]
-- Наступні розділи цієї частини деталізують `SRP`, `OCP`, `LSP`, `ISP` і `DIP`.
+- Наступні розділи цієї частини деталізують [[01-Sources/books/clean-architecture/02-Chapters/ch-07-single-responsibility-principle|SRP]] та [[01-Sources/books/clean-architecture/02-Chapters/ch-08-open-closed-principle|OCP]], а нотатки про `LSP`, `ISP` і `DIP` ще не додані.
