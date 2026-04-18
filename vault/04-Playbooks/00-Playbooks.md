@@ -2,7 +2,7 @@
 type: index
 scope: playbooks
 created: 2026-03-25
-updated: 2026-03-25
+updated: 2026-04-18
 ---
 
 # Плейбуки
@@ -18,3 +18,4 @@ updated: 2026-03-25
 ## Наявні плейбуки
 
 - [[04-Playbooks/approach-a-system-design-problem|Як підходити до задачі system design]]
+- [[04-Playbooks/playbook-solid-in-code|Як дотримуватись SOLID у коді]]
