@@ -13,7 +13,7 @@ tags:
   - source-note
   - index
 created: 2026-03-24
-updated: 2026-04-14
+updated: 2026-04-18
 ---
 
 # Clean Architecture
@@ -41,6 +41,7 @@ updated: 2026-04-14
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-p3-design-principles|Частина III. Принципи дизайну]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-07-single-responsibility-principle|Розділ 7. Принцип єдиної відповідальності]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-08-open-closed-principle|Розділ 8. Принцип відкритості-закритості]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-09-liskov-substitution-principle|Розділ 9. Принцип підстановки Лісков]]
 
 ## Локальні концепти
 
@@ -70,6 +71,7 @@ updated: 2026-04-14
 - [[02-Concepts/dependency-inversion|Інверсія залежностей]]
 - [[02-Concepts/single-responsibility-means-one-actor|SRP означає одного актора, а не одну дію]]
 - [[02-Concepts/open-closed-protects-high-level-policy|OCP захищає high-level policy через ієрархію залежностей]]
+- [[02-Concepts/liskov-substitution-preserves-client-behavior|LSP зберігає поведінку клієнта при підстановці]]
 - [[02-Concepts/solid-organizes-modules-for-change|SOLID організовує модулі для змінюваності]]
 - [[02-Concepts/plugin-architecture-via-polymorphism|Поліморфізм дозволяє будувати plugin architecture]]
 

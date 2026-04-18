@@ -11,7 +11,7 @@ tags:
   - source-note
   - concept
 created: 2026-04-14
-updated: 2026-04-14
+updated: 2026-04-18
 source: "synthesis"
 ---
 
@@ -37,7 +37,7 @@ source: "synthesis"
 
 - `S` -> [[02-Concepts/single-responsibility-means-one-actor|SRP означає одного актора, а не одну дію]]
 - `O` -> [[02-Concepts/open-closed-protects-high-level-policy|OCP захищає high-level policy через ієрархію залежностей]]
-- `L` -> Нотатка про `LSP` ще не створена
+- `L` -> [[02-Concepts/liskov-substitution-preserves-client-behavior|LSP зберігає поведінку клієнта при підстановці]]
 - `I` -> Нотатка про `ISP` ще не створена
 - `D` -> [[02-Concepts/dependency-inversion|Інверсія залежностей]]
 

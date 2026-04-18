@@ -12,7 +12,7 @@ tags:
   - source-note
   - chapter
 created: 2026-04-14
-updated: 2026-04-14
+updated: 2026-04-18
 source: excerpt
 ---
 
@@ -63,4 +63,4 @@ source: excerpt
 ## Джерело та продовження
 
 - [[01-Sources/books/clean-architecture/Clean Architecture (Robert C. Martin)|Нотатка книги]]
-- Наступні розділи цієї частини деталізують [[01-Sources/books/clean-architecture/02-Chapters/ch-07-single-responsibility-principle|SRP]] та [[01-Sources/books/clean-architecture/02-Chapters/ch-08-open-closed-principle|OCP]], а нотатки про `LSP`, `ISP` і `DIP` ще не додані.
+- Наступні розділи цієї частини деталізують [[01-Sources/books/clean-architecture/02-Chapters/ch-07-single-responsibility-principle|SRP]], [[01-Sources/books/clean-architecture/02-Chapters/ch-08-open-closed-principle|OCP]] і [[01-Sources/books/clean-architecture/02-Chapters/ch-09-liskov-substitution-principle|LSP]]; нотатка про `ISP` ще не додана, а [[02-Concepts/dependency-inversion|DIP]] уже винесений у спільний концепт.
