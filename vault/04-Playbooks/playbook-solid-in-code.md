@@ -128,9 +128,11 @@ public final class ReportsService {
 
 ### SOLID-варіант тієї самої фічі
 
-Спершу фіксуємо policy: use case має "зібрати дані звіту і відрендерити їх у вибраному форматі". Після цього розкладаємо рішення на ролі.
+Спершу фіксуємо policy: use case має "зібрати дані звіту і відрендерити їх у вибраному форматі". Нижче один цілісний приклад: спочатку контракти, потім concrete-реалізації, а в кінці composition root, де все реально збирається разом.
 
 ```java
+public record ReportData(String title, BigDecimal revenue) {}
+
 public record RenderedReport(
     String fileName,
     String contentType,
@@ -153,6 +155,12 @@ public interface GenerateFinancialReport {
     RenderedReport generate(String reportId, String format);
 }
 
+public interface PostgresClient {
+    Row querySingle(String sql, String reportId);
+}
+
+public record Row(String title, BigDecimal revenue) {}
+
 public final class FinancialReportInteractor implements GenerateFinancialReport {
     private final ReportDataGateway gateway;
     private final ReportRendererRegistry renderers;
@@ -165,54 +173,27 @@ public final class FinancialReportInteractor implements GenerateFinancialReport 
         this.renderers = renderers;
     }
 
+    @Override
     public RenderedReport generate(String reportId, String format) {
         ReportData data = gateway.loadReport(reportId);
-        return renderers.forFormat(format).render(data);
+        ReportRenderer renderer = renderers.forFormat(format);
+        return renderer.render(data);
     }
 }
 
 public final class HtmlReportRenderer implements ReportRenderer {
+    @Override
     public RenderedReport render(ReportData data) {
         return new RenderedReport("report.html", "text/html", renderHtml(data));
     }
 }
 
 public final class CsvReportRenderer implements ReportRenderer {
+    @Override
     public RenderedReport render(ReportData data) {
         return new RenderedReport("report.csv", "text/csv", renderCsv(data));
     }
 }
-
-public final class ReportsController {
-    private final GenerateFinancialReport generateFinancialReport;
-
-    public ReportsController(GenerateFinancialReport generateFinancialReport) {
-        this.generateFinancialReport = generateFinancialReport;
-    }
-
-    public HttpResponse download(String reportId, String format) {
-        RenderedReport report = generateFinancialReport.generate(reportId, format);
-        return HttpResponse.file(
-            report.fileName(),
-            report.contentType(),
-            report.content()
-        );
-    }
-}
-```
-
-### Повний приклад використання з concrete-реалізаціями
-
-Нижче той самий flow, але вже не лише з контрактами, а з concrete-класами й місцем, де все збирається разом:
-
-```java
-public record ReportData(String title, BigDecimal revenue) {}
-
-public interface PostgresClient {
-    Row querySingle(String sql, String reportId);
-}
-
-public record Row(String title, BigDecimal revenue) {}
 
 public final class PostgresReportDataGateway implements ReportDataGateway {
     private final PostgresClient postgres;
@@ -250,6 +231,23 @@ public final class InMemoryReportRendererRegistry implements ReportRendererRegis
     }
 }
 
+public final class ReportsController {
+    private final GenerateFinancialReport generateFinancialReport;
+
+    public ReportsController(GenerateFinancialReport generateFinancialReport) {
+        this.generateFinancialReport = generateFinancialReport;
+    }
+
+    public HttpResponse download(String reportId, String format) {
+        RenderedReport report = generateFinancialReport.generate(reportId, format);
+        return HttpResponse.file(
+            report.fileName(),
+            report.contentType(),
+            report.content()
+        );
+    }
+}
+
 public final class Application {
     public static void main(String[] args) {
         PostgresClient postgresClient = new RealPostgresClient();
@@ -281,7 +279,7 @@ public final class Application {
 }
 ```
 
-У цьому фрагменті вже видно повний ланцюг: `Application` створює concrete-залежності, `PostgresReportDataGateway` реалізує `ReportDataGateway`, `InMemoryReportRendererRegistry` реалізує `ReportRendererRegistry`, `FinancialReportInteractor` отримує ці абстракції в конструктор, а `ReportsController` використовує готовий use case для реального виклику `download("report-42", "csv")`.
+У цьому фрагменті вже видно повний ланцюг без розривів: зверху оголошені контракти, нижче йдуть concrete-реалізації `FinancialReportInteractor`, `HtmlReportRenderer`, `CsvReportRenderer`, `PostgresReportDataGateway`, `InMemoryReportRendererRegistry` і `ReportsController`, а в самому кінці `Application` збирає все докупи й викликає `controller.download("report-42", "csv")`.
 
 ### Фінальний flow
 
