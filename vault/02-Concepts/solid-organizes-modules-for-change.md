@@ -38,7 +38,7 @@ source: "synthesis"
 - `S` -> [[02-Concepts/single-responsibility-means-one-actor|SRP означає одного актора, а не одну дію]]
 - `O` -> [[02-Concepts/open-closed-protects-high-level-policy|OCP захищає high-level policy через ієрархію залежностей]]
 - `L` -> [[02-Concepts/liskov-substitution-preserves-client-behavior|LSP зберігає поведінку клієнта при підстановці]]
-- `I` -> Нотатка про `ISP` ще не створена
+- `I` -> [[02-Concepts/interface-segregation-avoids-dependencies-on-unused-operations|ISP ізолює клієнтів від невикористаних операцій]]
 - `D` -> [[02-Concepts/dependency-inversion|Інверсія залежностей]]
 
 ## Джерела

@@ -139,7 +139,7 @@ assert(r.area() == 10);
 
 - [[01-Sources/books/clean-architecture/Clean Architecture (Robert C. Martin)|Нотатка книги]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-08-open-closed-principle|Попередній розділ: Принцип відкритості-закритості]]
-- Наступний розділ у цій частині має деталізувати `ISP`.
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-10-interface-segregation-principle|Наступний розділ: Принцип розділення інтерфейсів]]
 
 ## Пов'язані нотатки
 
