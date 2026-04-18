@@ -43,6 +43,7 @@ updated: 2026-04-18
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-08-open-closed-principle|Розділ 8. Принцип відкритості-закритості]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-09-liskov-substitution-principle|Розділ 9. Принцип підстановки Лісков]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-10-interface-segregation-principle|Розділ 10. Принцип розділення інтерфейсів]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-11-dependency-inversion-principle|Розділ 11. Принцип інверсії залежностей]]
 
 ## Локальні концепти
 

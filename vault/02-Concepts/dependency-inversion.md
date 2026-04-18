@@ -11,7 +11,7 @@ tags:
   - source-note
   - concept
 created: 2026-03-24
-updated: 2026-04-14
+updated: 2026-04-18
 source: "synthesis"
 ---
 
@@ -57,6 +57,16 @@ flowchart LR
 ## Чому це важливо
 
 `DIP` дає практичний спосіб захистити бізнес-логіку від ерозії через фреймворки, `database`, `UI` та інфраструктурні рішення. Якщо залежності спрямовані до стабільних правил, то зміна деталей не тягне за собою ланцюгового редагування всередині ядра. Саме тому цей принцип напряму підтримує `OCP`: нові адаптери можна додавати без переписування high-level policy.
+
+## Стабільні абстракції
+
+Розділ 11 у `Clean Architecture` уточнює, що `DIP` не варто читати як заборону на будь-яку concrete залежність. Його справжня ціль - уникати саме volatile concretions. Стабільні платформні типи на кшталт `String` ми зазвичай терпимо, бо вони змінюються рідко й не диктують форму бізнес-правил. Натомість власні реалізації, фреймворки, драйвери та інші active details варто тримати поза ядром policy.
+
+- Абстракції зазвичай стабільніші за реалізації: інтерфейс змінюється рідше, бо кожна його правка тягне хвилю змін по всіх імплементаціях.
+- Добрий контракт дозволяє розвивати реалізації без постійного редагування самого інтерфейсу.
+- Якщо high-level policy залежить від нестабільної конкретики, вартість змін починає текти з периферії в центр системи.
+
+^dependency-inversion-stable-abstractions
 
 ## Інтуїція
 
@@ -129,8 +139,12 @@ public final class PostgresFinancialDataGateway implements FinancialDataGateway 
 
 Якщо policy знає про деталь, архітектура тече назовні. Якщо detail знає про контракт policy, залежності спрямовані правильно.
 
+Окремо пам'ятай про створення об'єктів: `new ConcreteType(...)` майже завжди означає залежність від detail. Тому concrete wiring зазвичай живе в `main`, composition root або `Abstract Factory`, а не всередині use case-у.
+
 ## Джерела
 
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-11-dependency-inversion-principle#^clean-architecture-ch11-main-idea]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-11-dependency-inversion-principle#^clean-architecture-ch11-thesis-stable-abstractions]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-05-object-oriented-programming#^clean-architecture-ch05-thesis-indirect-control]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-05-object-oriented-programming#^clean-architecture-ch05-thesis-dependency-inversion]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-05-object-oriented-programming#^clean-architecture-ch05-thesis-independent-components]]

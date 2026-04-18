@@ -11,7 +11,7 @@ tags:
   - source-note
   - code
 created: 2026-04-14
-updated: 2026-04-14
+updated: 2026-04-18
 source: "clean-architecture-synthesis"
 ---
 
@@ -98,3 +98,4 @@ public final class InMemoryFinancialDataGateway implements FinancialDataGateway 
 
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-05-object-oriented-programming|Розділ 5. Об'єктно-орієнтоване програмування]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-08-open-closed-principle|Розділ 8. Принцип відкритості-закритості]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-11-dependency-inversion-principle|Розділ 11. Принцип інверсії залежностей]]

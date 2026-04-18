@@ -146,7 +146,7 @@ public final class User1 {
 
 - [[01-Sources/books/clean-architecture/Clean Architecture (Robert C. Martin)|Нотатка книги]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-09-liskov-substitution-principle|Попередній розділ: Принцип підстановки Лісков]]
-- Наступний принцип у цій частині переходить до [[02-Concepts/dependency-inversion|інверсії залежностей]].
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-11-dependency-inversion-principle|Наступний розділ: Принцип інверсії залежностей]]
 
 ## Пов'язані нотатки
 
