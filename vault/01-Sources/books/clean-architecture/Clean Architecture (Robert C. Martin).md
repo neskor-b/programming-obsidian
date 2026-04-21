@@ -13,7 +13,7 @@ tags:
   - source-note
   - index
 created: 2026-03-24
-updated: 2026-04-18
+updated: 2026-04-21
 ---
 
 # Clean Architecture
@@ -44,6 +44,8 @@ updated: 2026-04-18
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-09-liskov-substitution-principle|Розділ 9. Принцип підстановки Лісков]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-10-interface-segregation-principle|Розділ 10. Принцип розділення інтерфейсів]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-11-dependency-inversion-principle|Розділ 11. Принцип інверсії залежностей]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-p4-component-principles|Частина IV. Принципи компонентів]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-12-components|Розділ 12. Компоненти]]
 
 ## Локальні концепти
 
@@ -57,6 +59,7 @@ updated: 2026-04-18
 - [[01-Sources/books/clean-architecture/03-Concepts/immutability-removes-classes-of-concurrency-problems|Незмінність прибирає цілі класи проблем конкурентності]]
 - [[01-Sources/books/clean-architecture/03-Concepts/segregation-of-mutability-localizes-concurrency-risk|Сегрегація змінності локалізує ризики конкурентності]]
 - [[01-Sources/books/clean-architecture/03-Concepts/event-sourcing-stores-transactions-not-state|Event sourcing зберігає транзакції, а не стан]]
+- [[01-Sources/books/clean-architecture/03-Concepts/components-are-units-of-deployment|Компоненти є одиницями розгортання]]
 
 ## Міжджерельні концепти з цієї книги
 
