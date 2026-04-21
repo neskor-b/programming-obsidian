@@ -46,7 +46,7 @@ updated: 2026-04-21
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-11-dependency-inversion-principle|Розділ 11. Принцип інверсії залежностей]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-p4-component-principles|Частина IV. Принципи компонентів]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-12-components|Розділ 12. Компоненти]]
-- [[01-Sources/books/clean-architecture/02-Chapters/ch-13-component-cohesion|Розділ 13. Когезія компонентів]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-13-component-cohesion|Розділ 13. Зв'язність компонентів]]
 
 ## Локальні концепти
 
@@ -73,7 +73,7 @@ updated: 2026-04-21
 - [[02-Concepts/interface-segregation-avoids-dependencies-on-unused-operations|ISP ізолює клієнтів від невикористаних операцій]]
 - [[02-Concepts/solid-organizes-modules-for-change|SOLID організовує модулі для змінюваності]]
 - [[02-Concepts/plugin-architecture-via-polymorphism|Поліморфізм дозволяє будувати plugin architecture]]
-- [[02-Concepts/component-cohesion-balances-release-change-and-reuse|Когезія компонентів балансує реліз, змінюваність і повторне використання]]
+- [[02-Concepts/component-cohesion-balances-release-change-and-reuse|Зв'язність компонентів балансує реліз, змінюваність і повторне використання]]
 
 ## Робочі папки
 

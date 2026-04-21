@@ -25,4 +25,4 @@ updated: 2026-04-21
 - [[02-Concepts/open-closed-protects-high-level-policy|OCP захищає high-level policy через ієрархію залежностей]]
 - [[02-Concepts/solid-organizes-modules-for-change|SOLID організовує модулі для змінюваності]]
 - [[02-Concepts/plugin-architecture-via-polymorphism|Поліморфізм дозволяє будувати plugin architecture]]
-- [[02-Concepts/component-cohesion-balances-release-change-and-reuse|Когезія компонентів балансує реліз, змінюваність і повторне використання]]
+- [[02-Concepts/component-cohesion-balances-release-change-and-reuse|Зв'язність компонентів балансує реліз, змінюваність і повторне використання]]

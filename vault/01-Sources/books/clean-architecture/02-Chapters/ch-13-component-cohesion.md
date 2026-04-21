@@ -4,7 +4,7 @@ source_type: "books"
 source_slug: "clean-architecture"
 source_title: "Clean Architecture"
 chapter: "13"
-title: "Когезія компонентів"
+title: "Зв'язність компонентів"
 aliases:
   - "Component Cohesion"
 tags:
@@ -15,7 +15,7 @@ updated: 2026-04-21
 source: "excerpt"
 ---
 
-# Когезія компонентів
+# Зв'язність компонентів
 
 ## Контекст
 
@@ -40,7 +40,7 @@ source: "excerpt"
 - `REP` і `CCP` штовхають компоненти до укрупнення, тоді як `CRP` тягне їх до зменшення; архітектор працює всередині цієї напруги, а не поза нею. ^clean-architecture-ch13-thesis-tension
 - На ранніх стадіях проєкту зазвичай важливіше `CCP`, бо локалізація змін важливіша за reuse; з дозріванням системи структура може зміщуватися в бік повторного використання. ^clean-architecture-ch13-thesis-maturity
 
-## Три принципи когезії
+## Три принципи зв'язності
 
 ### `REP`: release слідує за reuse
 
@@ -107,7 +107,7 @@ graph TD
 
 ## Пов'язані концепти
 
-- [[02-Concepts/component-cohesion-balances-release-change-and-reuse|Когезія компонентів балансує реліз, змінюваність і повторне використання]]
+- [[02-Concepts/component-cohesion-balances-release-change-and-reuse|Зв'язність компонентів балансує реліз, змінюваність і повторне використання]]
 - [[01-Sources/books/clean-architecture/03-Concepts/components-are-units-of-deployment|Компоненти є одиницями розгортання]]
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
 - [[02-Concepts/solid-organizes-modules-for-change|SOLID організовує модулі для змінюваності]]
