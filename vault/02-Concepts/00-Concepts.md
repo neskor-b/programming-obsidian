@@ -2,7 +2,7 @@
 type: index
 scope: shared-concepts
 created: 2026-03-24
-updated: 2026-03-25
+updated: 2026-04-21
 ---
 
 # Спільні концепти
@@ -25,3 +25,4 @@ updated: 2026-03-25
 - [[02-Concepts/open-closed-protects-high-level-policy|OCP захищає high-level policy через ієрархію залежностей]]
 - [[02-Concepts/solid-organizes-modules-for-change|SOLID організовує модулі для змінюваності]]
 - [[02-Concepts/plugin-architecture-via-polymorphism|Поліморфізм дозволяє будувати plugin architecture]]
+- [[02-Concepts/component-cohesion-balances-release-change-and-reuse|Когезія компонентів балансує реліз, змінюваність і повторне використання]]

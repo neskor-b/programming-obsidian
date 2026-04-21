@@ -89,6 +89,7 @@ flowchart LR
 - [[01-Sources/books/clean-architecture/Clean Architecture (Robert C. Martin)|Нотатка книги]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-p4-component-principles|Вступ до Part IV]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-11-dependency-inversion-principle|Попередній розділ: Принцип інверсії залежностей]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-13-component-cohesion|Наступний розділ: Когезія компонентів]]
 
 ## Пов'язані нотатки
 
