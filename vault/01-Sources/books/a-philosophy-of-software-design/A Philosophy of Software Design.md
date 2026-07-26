@@ -33,6 +33,7 @@ updated: 2026-07-26
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity|Розділ 1. Вступ: усе зводиться до складності]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-02-nature-of-complexity|Розділ 2. Природа складності]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-03-strategic-vs-tactical-programming|Розділ 3. Робочого коду недостатньо: стратегічне й тактичне програмування]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-04-modules-should-be-deep|Розділ 4. Модулі мають бути глибокими]]
 
 ## Локальні концепти
 
@@ -42,6 +43,9 @@ updated: 2026-07-26
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/complexity-symptoms|Симптоми складності]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/dependencies-and-obscurity|Залежності та неочевидність породжують складність]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/complexity-accumulates-incrementally|Складність накопичується інкрементально]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/deep-modules-hide-complexity|Глибокі модулі приховують складність]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/abstractions-must-preserve-important-details|Абстракції мають зберігати важливі деталі]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/classitis-increases-system-complexity|Classitis збільшує складність системи]]
 
 ## Робочі папки
 
