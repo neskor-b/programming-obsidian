@@ -1,0 +1,57 @@
+---
+type: concept
+scope: "source-local"
+source_type: "books"
+source_slug: "a-philosophy-of-software-design"
+source_title: "A Philosophy of Software Design"
+sources:
+  - "a-philosophy-of-software-design"
+title: "Складність накопичується інкрементально"
+aliases:
+  - "Complexity is incremental"
+tags:
+  - source-note
+  - concept
+created: 2026-07-26
+updated: 2026-07-26
+source: "chapter-2-excerpt"
+---
+
+# Складність накопичується інкрементально
+
+## Визначення
+
+Складність рідко виникає через одну катастрофічну помилку. Вона накопичується з багатьох малих залежностей і неочевидностей, кожна з яких окремо здається прийнятною, але разом вони починають впливати майже на кожну зміну в системі.
+
+^aphsd-complexity-incremental-definition
+
+## Чому це важливо
+
+Локальний ефект чергового компромісу надто малий, щоб одразу виправдати прибирання, а виправлення одного старого недоліку надто мале, щоб помітно оздоровити вже складну систему. Ця асиметрія пояснює, чому складність легко додавати й важко усувати та чому дисципліна потрібна під час кожної зміни.
+
+## Ознаки в коді
+
+- Нові special cases регулярно додаються як «тимчасові» винятки.
+- Кожна окрема залежність здається нешкідливою, але типові зміни вже перетинають багато таких зв'язків.
+- Окремий рефакторинг майже не змінює загальної підтримуваності, бо проблеми розподілені системою.
+- Команда виправдовує нову неочевидність тим, що її поточна вартість невелика.
+
+## Джерела
+
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-02-nature-of-complexity#^aphsd-ch02-thesis-incremental]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-02-nature-of-complexity#^aphsd-ch02-quote-incremental]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-02-nature-of-complexity#^aphsd-ch02-rule-zero-tolerance]]
+
+## Пов'язані концепти
+
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/design-is-continuous-and-incremental|Дизайн є безперервним та інкрементальним]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/dependencies-and-obscurity|Залежності та неочевидність породжують складність]]
+- [[02-Concepts/complexity-is-the-central-design-problem|Складність є центральною проблемою дизайну ПЗ]]
+
+## Пов'язаний код
+
+- Окремі code notes для цього концепту ще не створені.
+
+## Пов'язані playbooks
+
+- Окремий playbook із цього уривка не створено.

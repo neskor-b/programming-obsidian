@@ -11,7 +11,7 @@ tags:
   - source-note
   - index
 created: 2026-03-24
-updated: 2026-03-25
+updated: 2026-07-26
 ---
 
 # A Philosophy of Software Design
@@ -31,12 +31,16 @@ updated: 2026-03-25
 ## Розділи
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity|Розділ 1. Вступ: усе зводиться до складності]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-02-nature-of-complexity|Розділ 2. Природа складності]]
 
 ## Локальні концепти
 
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/design-is-continuous-and-incremental|Дизайн є безперервним та інкрементальним]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/modular-design-encapsulates-complexity|Модульний дизайн інкапсулює складність]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/red-flags-guide-design-judgment|Red flags спрямовують дизайнерське судження]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/complexity-symptoms|Симптоми складності]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/dependencies-and-obscurity|Залежності та неочевидність породжують складність]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/complexity-accumulates-incrementally|Складність накопичується інкрементально]]
 
 ## Робочі папки
 

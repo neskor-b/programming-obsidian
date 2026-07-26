@@ -11,7 +11,7 @@ tags:
   - source-note
   - concept
 created: 2026-03-24
-updated: 2026-03-24
+updated: 2026-07-26
 source: "synthesis"
 ---
 
@@ -39,6 +39,9 @@ source: "synthesis"
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity#^aphsd-ch01-thesis-understanding]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity#^aphsd-ch01-thesis-accumulates]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity#^aphsd-ch01-quote-complexity]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-02-nature-of-complexity#^aphsd-ch02-main-idea]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-02-nature-of-complexity#^aphsd-ch02-thesis-experience]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-02-nature-of-complexity#^aphsd-ch02-thesis-causes]]
 
 ## Пов'язані концепти
 
@@ -46,6 +49,9 @@ source: "synthesis"
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/modular-design-encapsulates-complexity|Модульний дизайн інкапсулює складність]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/design-is-continuous-and-incremental|Дизайн є безперервним та інкрементальним]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/red-flags-guide-design-judgment|Red flags спрямовують дизайнерське судження]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/complexity-symptoms|Симптоми складності]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/dependencies-and-obscurity|Залежності та неочевидність породжують складність]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/complexity-accumulates-incrementally|Складність накопичується інкрементально]]
 
 ## Пов'язаний код
 
