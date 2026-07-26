@@ -14,8 +14,8 @@ tags:
   - source-note
   - concept
 created: 2026-03-24
-updated: 2026-03-25
-source: "chapter-1-excerpt"
+updated: 2026-07-26
+source: "chapter-1-and-3-excerpts"
 ---
 
 # Дизайн є безперервним та інкрементальним
@@ -41,6 +41,8 @@ source: "chapter-1-excerpt"
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity#^aphsd-ch01-thesis-continuous-design]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity#^aphsd-ch01-thesis-waterfall]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity#^aphsd-ch01-quote-incremental]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-03-strategic-vs-tactical-programming#^aphsd-ch03-thesis-continuous]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-03-strategic-vs-tactical-programming#^aphsd-ch03-rule-small-investments]]
 
 ## Пов'язані концепти
 

@@ -3,6 +3,7 @@ type: concept
 scope: "shared-evergreen"
 sources:
   - "clean-architecture"
+  - "a-philosophy-of-software-design"
 title: "Архітектура визначає вартість змін"
 aliases:
   - "Architecture governs cost of change"
@@ -11,7 +12,7 @@ tags:
   - source-note
   - concept
 created: 2026-03-24
-updated: 2026-03-24
+updated: 2026-07-26
 source: "synthesis"
 ---
 
@@ -39,12 +40,17 @@ source: "synthesis"
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-02-a-tale-of-two-values#^clean-architecture-ch02-thesis-scope-shape]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-02-a-tale-of-two-values#^clean-architecture-ch02-thesis-cost-growth]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-02-a-tale-of-two-values#^clean-architecture-ch02-quote-architecture-last]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-03-strategic-vs-tactical-programming#^aphsd-ch03-main-idea]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-03-strategic-vs-tactical-programming#^aphsd-ch03-thesis-investment-rate]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-03-strategic-vs-tactical-programming#^aphsd-ch03-rule-future-extension]]
 
 ## Пов'язані концепти
 
 - [[01-Sources/books/clean-architecture/03-Concepts/two-values-of-software|Дві цінності програмного забезпечення]]
 - [[01-Sources/books/clean-architecture/03-Concepts/design-architecture-continuum|Єдність дизайну й архітектури]]
 - [[01-Sources/books/clean-architecture/03-Concepts/cleanliness-preserves-productivity|Охайність зберігає продуктивність]]
+- [[02-Concepts/complexity-is-the-central-design-problem|Складність є центральною проблемою дизайну ПЗ]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/design-is-continuous-and-incremental|Дизайн є безперервним та інкрементальним]]
 
 ## Пов'язаний код
 

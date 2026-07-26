@@ -32,6 +32,7 @@ updated: 2026-07-26
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity|Розділ 1. Вступ: усе зводиться до складності]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-02-nature-of-complexity|Розділ 2. Природа складності]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-03-strategic-vs-tactical-programming|Розділ 3. Робочого коду недостатньо: стратегічне й тактичне програмування]]
 
 ## Локальні концепти
 
